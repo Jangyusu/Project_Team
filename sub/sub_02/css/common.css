@@ -1,0 +1,21 @@
+html, body, ul, li, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration-line: none;
+    display: inline-block;
+    color: inherit;
+}
+ul, li {
+    list-style-type: none;
+    /* display: inline-block; */
+}
+img {
+    font-size: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+*{
+    box-sizing: border-box;
+}

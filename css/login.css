@@ -1,0 +1,182 @@
+@import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+/********** section **********/
+
+section{
+    width: 100%;
+}
+
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 65%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section h3{
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: left;
+}
+section .logjoin{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+}
+section .leftboxlog{
+    width: 50%;
+    height: 900px;
+}
+section .leftboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .leftboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+section .leftboxlog .login{
+    height: 113px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section .leftboxlog .login input:nth-of-type(1){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 1.375rem;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+section .leftboxlog .login input:nth-of-type(2){
+    width: 380px;
+    height: 45px;
+    outline: none;
+    outline-style: none;
+    border: 3px solid #344066;
+    font-size: 1.375rem;
+    border-radius: 10px;
+    padding-left: 10px
+}
+section .leftboxlog .login input:nth-of-type(3){
+    width: 160px;
+    height: 113px;
+    position: absolute;
+    left:400px; top: 0px;
+    border: none;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    padding-left: 0;
+    font-size: 1.5rem;
+}
+section .leftboxlog .login input::placeholder{
+    font-size: 1.125rem;
+}
+section .leftboxlog .idSave{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom:44px;
+}
+section .leftboxlog .idSave input{
+    width: 19px; height: 19px;
+    margin-left: 5px;
+}
+section .leftboxlog .idSave p{
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+section .leftboxlog p{
+    margin-left: 5px;
+    line-height: 43px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+section .rightboxlog{
+    width: 50%;
+}
+section .rightboxlog .titleLogin p{
+    margin:20px 0 0 20px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+section .rightboxlog .titleLogin{
+    width: 100%;
+    margin:255px auto 48px;
+}
+section .rightboxlog .join{
+    width: 488px; height: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+}
+
+section .rightboxlog .join a{
+    width: 488px; height: 92px;
+    background: #344066;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 72px;
+    font-size: 1.625rem;
+    position: relative;
+}
+section .rightboxlog .join a:nth-of-type(1):after{
+    content: '만 14세 이상 내국인';
+    font-size:1.125rem;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(2):after{
+    content: '만 14세 미만 내국인';
+    font-size:1.125rem;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(3):after{
+    content: '한국에 계신 외국인';
+    font-size:1.125rem;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}
+section .rightboxlog .join a:nth-of-type(4):after{
+    content: '사업자 및 공식단체';
+    font-size:1.125rem;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translateX(-50%);
+    line-height: 30px;
+}

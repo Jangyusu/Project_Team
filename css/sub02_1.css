@@ -1,0 +1,889 @@
+@import url(common.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+/* font-family: 'NanumSquare', sans-serif; */
+/** font
+
+font-family: 'NanumSquare', sans-serif
+font-family: 'Nanum Gothic', sans-serif;
+
+**/
+
+
+/********** body **********/
+
+html, body {
+    color: #333;
+}
+
+/*************** content ***************/
+
+section{
+    width: 100%;
+    position: relative;
+}
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* 여기에 클래스명과 이미지파일 교체해야함. */
+section .sub2_1{
+    background: url(../img/sub/img_sub04.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
+}
+section .mainForm{
+    width: 1275px;
+    position: absolute;
+    left: 50%;
+    top: 460px;
+    transform: translateX(100%);
+    transition: 1s;
+    display: none;
+}
+section .mainForm.active {
+    transform: translateX(-50%);
+}
+section .mainForm > p{
+    text-align: right;
+}
+section .mainForm p a{
+    margin-right: 5px;
+}
+section .mainForm p a i{
+    margin-left: 5px;
+}
+section .mainForm .notice{
+    background:#dfdfdf;
+}
+
+section .notice strong{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 70px 0 0 35px;
+}
+section .notice p{
+    font-size: 1.125rem;
+    padding: 20px 0 0 35px;
+} 
+section .notice em{
+    font-size: 1.125rem;
+    color:#b70000;
+    padding: 20px 0 70px 35px;
+    font-style: normal;
+} 
+
+section .mainForm table{
+    width: 1275px;
+    border: 1px solid #333;
+    margin: 30px auto ;
+    text-align: center;
+    border-collapse: collapse;
+}
+section .mainForm table thead th:nth-of-type(2n-1){
+    background:#eee;
+    width: 200px;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+section .mainForm table tbody td:nth-of-type(2n-1){
+    background:#eee;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+section .mainForm table th{
+    border: 1px solid #333;
+    padding: 5px 0;
+}
+section .mainForm table td{
+    border: 1px solid #333;
+    padding: 5px 10px;
+}
+section .mainForm table input[type=text]{
+    width:1050px;
+    border: none;
+    outline: none;
+}
+section .mainForm table textarea{
+    width: 1050px;
+    resize: none;
+    height: 300px;
+    border: none;
+    outline: none;
+}
+section .mainForm table .inputTd p{
+    text-align: right;
+    font-weight: bold;
+}
+section .mainForm table .inputTd p span{
+    color: #b70000;
+    font-weight: bold;
+}
+section .mainForm table input[type=radio]{
+    margin: 0 10px;
+}
+section .mainForm tbody:last-child tr:last-child td:last-child{
+    text-align: left;
+    padding-left: 20px;
+}
+section .mainForm .button{
+    text-align: center;
+    padding-bottom:100px;
+}
+section .mainForm button{
+    border: 0;
+    background: #201237;
+    color: #fff;
+    padding: 0 33px;
+    margin-right: 10px;
+    line-height: 33px;
+    cursor: pointer;
+}
+section .mainForm button:last-child{
+    background: #eee;
+    color: #201237;
+    margin-right: 0;
+}
+sup{
+    color:#b70000;
+    font-weight: bold;
+}
+.content {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    transition: height 1s, transform 1s;
+}
+.content.active {
+    height: 1000px;
+    transform: translateX(-100%);
+}
+.content .title {
+    width: 100%; height: 410px;
+    background: url(../img/sub/img_sub04.jpg) no-repeat center / cover;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 2.25rem;
+    color: #fff;
+    font-weight: bold;
+}
+.content ul {
+    display: flex; justify-content: center;
+}
+.content ul li {
+    margin-right: 76px;
+    width: 289px; height: 289px;
+    background: #eee;
+    border: 15px solid #354067;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    opacity: .8;
+}
+.content ul li:hover {
+    opacity: 1;
+}
+.content ul li:last-of-type {
+    margin-right: 0;
+}
+.content ul li img {
+    height: 90px;
+}
+.content ul li p {
+    font-size: 1.875rem;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+@media (max-width:1024px){
+    section .top{
+        width: 100%; height: 30vh;
+        position: relative;
+    }
+    section .sub2_1{
+        background: url(../img/top5_1.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 30vh;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .sub2_1{
+        background: url(../img/sub/img_sub04.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    
+    section .mainForm{
+        width: 95%;
+        position: absolute;
+        left: 50%;
+        top: 31vh;
+        transform: translateX(100%);
+        transition: 1s;
+        display: none;
+    }
+    section .mainForm.active {
+        transform: translateX(-50%);
+    }
+    section .mainForm > p{
+        text-align: right;
+    }
+    section .mainForm p a{
+        margin-right: 5px;
+    }
+    section .mainForm p a i{
+        margin-left: 5px;
+    }
+    section .mainForm .notice{
+        background:#dfdfdf;
+    }
+    
+    section .notice strong{
+        font-size: 1.7rem;
+        font-weight: bolder;
+        padding: 5vw 0 0 5vw;
+    }
+    section .notice p{
+        font-size: 1.3rem;
+        padding: 5vw 0 0 5vw;
+    } 
+    section .notice em{
+        font-size: 1.3rem;
+        color:#b70000;
+        padding: 5vw 0 5vw 5vw;
+        font-style: normal;
+    } 
+    
+    section .mainForm table{
+        width: 95%;
+        border: 1px solid #333;
+        margin: 3vh auto ;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    section .mainForm table thead th:nth-of-type(2n-1){
+        background:#eee;
+        width: 10vh;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    section .mainForm table tbody td:nth-of-type(2n-1){
+        background:#eee;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    section .mainForm table th{
+        border: 1px solid #333;
+        padding: 5px 0;
+    }
+    section .mainForm table td{
+        border: 1px solid #333;
+        padding: 5px 10px;
+        font-size: 1.3rem;
+    }
+    section .mainForm table td p{
+        font-size: 1.3rem;
+    }
+    section .mainForm table input[type=text]{
+        width:100%;
+    }
+    section .mainForm table textarea{
+        width: 100%;
+        resize: none;
+        height: 300px;
+    }
+    section .mainForm table .inputTd p{
+        text-align: right;
+        font-weight: bold;
+    }
+    section .mainForm table .inputTd p span{
+        font-size: 1.3rem;
+        color: #b70000;
+        font-weight: bold;
+    }
+    section .mainForm table input[type=radio]{
+        margin: 0 10px;
+    }
+    section .mainForm tbody:last-child tr:last-child td:last-child{
+        text-align: left;
+        padding-left: 20px;
+    }
+    section .mainForm .button{
+        text-align: center;
+        padding-bottom:100px;
+    }
+    section .mainForm button{
+        border: 0;
+        background: #201237;
+        color: #fff;
+        padding: 0 33px;
+        margin-right: 10px;
+        line-height: 33px;
+        cursor: pointer;
+    }
+    section .mainForm button:last-child{
+        background: #eee;
+        color: #201237;
+        margin-right: 0;
+    }
+    sup{
+        color:#b70000;
+        font-weight: bold;
+    }
+
+
+    .content {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+        transition: height 1s, transform 1s;
+    }
+    .content.active {
+        height: 1000px;
+        transform: translateX(-100%);
+    }
+    .content .title {
+        width: 100%; height: 30vh;
+        background: url(../img/sub/img_sub04.jpg) no-repeat center / cover;
+        display: flex; justify-content: center; align-items: center;
+        font-size: 2.25rem;
+        color: #fff;
+        font-weight: bold;
+    }
+    .content ul {
+        display: flex; justify-content: center;
+    }
+    .content ul li {
+        margin-right: 76px;
+        width: 289px; height: 289px;
+        background: #eee;
+        border: 15px solid #354067;
+        border-radius: 100%;
+        cursor: pointer;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        opacity: .8;
+    }
+    .content ul li:hover {
+        opacity: 1;
+    }
+    .content ul li:last-of-type {
+        margin-right: 0;
+    }
+    .content ul li img {
+        height: 90px;
+    }
+    .content ul li p {
+        font-size: 1.875rem;
+        font-weight: 800;
+        line-height: 65px;
+    }
+    .content {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh;
+        transition: height 1s, transform 1s;
+    }
+    .content.active {
+        height: 130vh;
+        transform: translateX(-100%);
+    }
+    .content .title {
+        width: 100%; height: 30vh;
+        background: url(../img/sub/img_sub04.jpg) no-repeat center / cover;
+        display: flex; justify-content: center; align-items: center;
+        font-size: 2.25rem;
+        color: #fff;
+        font-weight: bold;
+    }
+    .content ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .content ul li {
+        margin-right: 0;
+        margin: 0 auto;
+        width: 20vh; height: 20vh;
+        background: #eee;
+        border: 1vh solid #354067;
+        border-radius: 100%;
+        cursor: pointer;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        opacity: .8;
+        margin-bottom: 1vh;
+    }
+    .content ul li:hover {
+        opacity: 1;
+    }
+    .content ul li:last-of-type {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .content ul li img {
+        height: 5vh;
+    }
+    .content ul li p {
+        font-size: 1.2rem;
+        font-weight: 800;
+        line-height: 4vh;
+    }
+
+}
+@media (max-width:768px){
+    section .top{
+        width: 100%; height: 30vh;
+        position: relative;
+    }
+    section .sub2_1{
+        background: url(../img/top5_1.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 30vh;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .sub2_1{
+        background: url(../img/sub/img_sub04.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    
+    section .mainForm{
+        width: 95%;
+        position: absolute;
+        left: 50%;
+        top: 31vh;
+        transform: translateX(100%);
+        transition: 1s;
+        display: none;
+    }
+    section .mainForm.active {
+        transform: translateX(-50%);
+    }
+    section .mainForm > p{
+        text-align: right;
+    }
+    section .mainForm p a{
+        margin-right: 5px;
+    }
+    section .mainForm p a i{
+        margin-left: 5px;
+    }
+    section .mainForm .notice{
+        background:#dfdfdf;
+    }
+    
+    section .notice strong{
+        font-size: 3.5vw;
+        font-weight: bolder;
+        padding: 5vw 0 0 5vw;
+    }
+    section .notice p{
+        font-size: 3vw;
+        padding: 5vw 0 0 5vw;
+    } 
+    section .notice em{
+        font-size: 3vw;
+        color:#b70000;
+        padding: 5vw 0 5vw 5vw;
+        font-style: normal;
+    } 
+    
+    section .mainForm table{
+        width: 95%;
+        border: 1px solid #333;
+        margin: 3vh auto ;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    section .mainForm table thead th:nth-of-type(2n-1){
+        background:#eee;
+        width: 10vh;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    section .mainForm table tbody td:nth-of-type(2n-1){
+        background:#eee;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    section .mainForm table th{
+        border: 1px solid #333;
+        padding: 5px 0;
+    }
+    section .mainForm table td{
+        border: 1px solid #333;
+        padding: 5px 10px;
+        font-size: 3vw;
+    }
+    section .mainForm table td p{
+        font-size: 3vw;
+    }
+    section .mainForm table input[type=text]{
+        width:100%;
+    }
+    section .mainForm table textarea{
+        width: 100%;
+        resize: none;
+        height: 300px;
+    }
+    section .mainForm table .inputTd p{
+        text-align: right;
+        font-weight: bold;
+    }
+    section .mainForm table .inputTd p span{
+        font-size: 3vw;
+        color: #b70000;
+        font-weight: bold;
+    }
+    section .mainForm table input[type=radio]{
+        margin: 0 10px;
+    }
+    section .mainForm tbody:last-child tr:last-child td:last-child{
+        text-align: left;
+        padding-left: 20px;
+    }
+    section .mainForm .button{
+        text-align: center;
+        padding-bottom:100px;
+    }
+    section .mainForm button{
+        border: 0;
+        background: #201237;
+        color: #fff;
+        padding: 0 33px;
+        margin-right: 10px;
+        line-height: 33px;
+        cursor: pointer;
+    }
+    section .mainForm button:last-child{
+        background: #eee;
+        color: #201237;
+        margin-right: 0;
+    }
+    sup{
+        color:#b70000;
+        font-weight: bold;
+    }
+    .content {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh;
+        transition: height 1s, transform 1s;
+    }
+    .content.active {
+        height: 130vh;
+        transform: translateX(-100%);
+    }
+    .content .title {
+        width: 100%; height: 30vh;
+        background: url(../img/sub/img_sub04.jpg) no-repeat center / cover;
+        display: flex; justify-content: center; align-items: center;
+        font-size: 2.25rem;
+        color: #fff;
+        font-weight: bold;
+    }
+    .content ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content ul li {
+        margin-right: 0;
+        margin: 0 auto;
+        width:90%; height: 10vh;
+        background: #eee;
+        border: 1vh solid #354067;
+        border-radius: 2vh;
+        cursor: pointer;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        opacity: .8;
+        margin-bottom: 1vh;
+    }
+    .content ul li:hover {
+        opacity: 1;
+    }
+    .content ul li:last-of-type {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .content ul li img {
+        height: 90px;
+        display: none;
+    }
+    .content ul li p {
+        font-size: 4vw;
+        font-weight: 800;
+        line-height: 4vh;
+    }
+} 
+
+@media (max-width:480px){
+    section .top{
+        width: 100%; height: 30vh;
+        position: relative;
+    }
+    section .sub2_1{
+        background: url(../img/top5_1.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 30vh;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .sub2_1{
+        background: url(../img/sub/img_sub04.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    
+    section .mainForm{
+        width: 95%;
+        position: absolute;
+        left: 50%;
+        top: 31vh;
+        transform: translateX(100%);
+        transition: 1s;
+        display: none;
+    }
+    section .mainForm.active {
+        transform: translateX(-50%);
+    }
+    section .mainForm > p{
+        text-align: right;
+    }
+    section .mainForm p a{
+        margin-right: 5px;
+    }
+    section .mainForm p a i{
+        margin-left: 5px;
+    }
+    section .mainForm .notice{
+        background:#dfdfdf;
+    }
+    
+    section .notice strong{
+        font-size: 4.5vw;
+        font-weight: bolder;
+        padding: 5vw 0 0 5vw;
+    }
+    section .notice p{
+        font-size: 3.5vw;
+        padding: 5vw 0 0 5vw;
+    } 
+    section .notice em{
+        font-size: 3.5vw;
+        color:#b70000;
+        padding: 5vw 0 5vw 5vw;
+        font-style: normal;
+    } 
+    
+    section .mainForm table{
+        width: 95%;
+        border: 1px solid #333;
+        margin: 3vh auto ;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    section .mainForm table thead th:nth-of-type(2n-1){
+        background:#eee;
+        width: 10vh;
+        font-weight: bold;
+        font-size: 3.5vw;
+    }
+    section .mainForm table tbody td:nth-of-type(2n-1){
+        background:#eee;
+        font-weight: bold;
+        font-size: 3.5vw;
+    }
+    section .mainForm table th{
+        border: 1px solid #333;
+        padding: 5px 0;
+    }
+    section .mainForm table td{
+        border: 1px solid #333;
+        padding: 5px 10px;
+        font-size: 3.5vw;
+    }
+    section .mainForm table td p{
+        font-size: 3.5vw;
+    }
+    section .mainForm table input[type=text]{
+        width:100%;
+    }
+    section .mainForm table textarea{
+        width: 100%;
+        resize: none;
+        height: 300px;
+    }
+    section .mainForm table .inputTd p{
+        text-align: right;
+        font-weight: bold;
+    }
+    section .mainForm table .inputTd p span{
+        color: #b70000;
+        font-weight: bold;
+    }
+    section .mainForm table input[type=radio]{
+        margin: 0 10px;
+    }
+    section .mainForm tbody:last-child tr:last-child td:last-child{
+        text-align: left;
+        padding-left: 20px;
+    }
+    section .mainForm .button{
+        text-align: center;
+        padding-bottom:100px;
+    }
+    section .mainForm button{
+        border: 0;
+        background: #201237;
+        color: #fff;
+        padding: 0 33px;
+        margin-right: 10px;
+        line-height: 33px;
+        cursor: pointer;
+    }
+    section .mainForm button:last-child{
+        background: #eee;
+        color: #201237;
+        margin-right: 0;
+    }
+    sup{
+        color:#b70000;
+        font-weight: bold;
+    }
+
+
+    .content {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vh;
+        transition: height 1s, transform 1s;
+    }
+    .content.active {
+        height: 130vh;
+        transform: translateX(-100%);
+    }
+    .content .title {
+        width: 100%; height: 30vh;
+        background: url(../img/sub/img_sub04.jpg) no-repeat center / cover;
+        display: flex; justify-content: center; align-items: center;
+        font-size: 2.25rem;
+        color: #fff;
+        font-weight: bold;
+    }
+    .content ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content ul li {
+        margin-right: 0;
+        margin: 0 auto;
+        width:90%; height: 10vh;
+        background: #eee;
+        border: 1vh solid #354067;
+        border-radius: 2vh;
+        cursor: pointer;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        opacity: .8;
+        margin-bottom: 1vh;
+    }
+    .content ul li:hover {
+        opacity: 1;
+    }
+    .content ul li:last-of-type {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .content ul li img {
+        height: 90px;
+        display: none;
+    }
+    .content ul li p {
+        font-size: 4vw;
+        font-weight: 800;
+        line-height: 4vh;
+    }
+}

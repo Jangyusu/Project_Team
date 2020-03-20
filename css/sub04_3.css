@@ -1,0 +1,538 @@
+@import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+.bottomline{width: 100%;margin-top: 20px; border-bottom: 1px solid #e3e3e3;}
+.topline{width: 100%; margin-bottom: 20px; border-top: 1px solid #e3e3e3;}
+#wrap{margin: 0 auto; overflow: hidden; }   
+
+
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .sub4_3{
+    background: url(../img/top4_3.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+section .gallery{
+    width: 1275px;
+    height: 577px;
+    margin: 50px auto 0;
+    position: relative;
+    background: url(../img/gallery01.jpg) no-repeat center; 
+}
+section .gallery a:nth-of-type(1){
+    position: absolute;
+    top: 50%; left: 10px;
+    transform: translateY(-50%);
+}
+section .gallery a:nth-of-type(2){
+    position: absolute;
+    top: 50%; right: 10px;
+    transform: translateY(-50%);
+}
+section .gallery a i{
+    color: #fff;
+    font-size: 3.75rem;
+}
+section .gallery figure{
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    padding: 1vw 0 1vw 3vw;
+}
+section .gallery figcaption{
+    color: #fff;
+    font-size: 1.5vw;
+}
+section .gallery figure:after{
+    content: '';
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 0;
+}
+section .phototab{
+    width: 1275px;
+    margin: 25px auto 80px;
+}
+section .phototab ul{
+    display: flex;
+    justify-content: space-between;
+}
+section .phototab ul li{
+    width: 299px;
+    height: 444px;
+    position: relative;
+    overflow: hidden;
+}
+section .phototab ul li:after{
+    content: '';
+    width: 299px;
+    height: 444px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+}
+section .phototab ul li a{
+    width: 299px;
+    line-height: 444px;
+    text-align: center;
+    position: absolute;
+    top: 45%; left:  50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 3;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+section .phototab ul li a:after{
+    content: '';
+    position: absolute;
+    top: 55%; left:  50%;
+    transform: translate(-50%,0);
+    width: 100px;
+    height: 2px;
+    background: #fff;
+}
+section .phototab ul li p{
+    width: 280px;
+    position: absolute;
+    top: 50%; left:  50%;
+    transform: translate(-50%, 30%);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+}
+section .phototab ul li img{
+    transition: .5s;
+}
+section .phototab ul li:hover img{
+    transform: scale(1.2);
+}
+
+@media (max-width:1024px){section .top{
+    width: 100%; height: 30vh;
+    position: relative;
+}
+section .sub4_3{
+    background: url(../img/top4_3.jpg) no-repeat center/ cover;
+    margin-bottom: 3vh;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+section .gallery{
+    width: 90%;
+    height: 60vw;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/gallery01.jpg) no-repeat center; 
+}
+section .gallery a:nth-of-type(1){
+    position: absolute;
+    top: 50%; left: 2vw;
+    transform: translateY(-50%);
+}
+section .gallery a:nth-of-type(2){
+    position: absolute;
+    top: 50%; right: 2vw;
+    transform: translateY(-50%);
+}
+section .gallery a i{
+    color: #fff;
+    font-size: 5vw;
+}
+section .gallery figure{
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    padding: 3vw 0 2vw 3vw;
+}
+section .gallery figcaption{
+    color: #fff;
+    font-size: 3vw;
+}
+section .gallery figure:after{
+    content: '';
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 0;
+}
+section .phototab{
+    width: 100%;
+    margin: 10vw auto;
+}
+section .phototab ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+section .phototab ul li{
+    width: 24%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+section .phototab ul li:after{
+    content: '';
+    width: 100%;
+    height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+}
+section .phototab ul li a{
+    width: 30vh;
+    line-height: 30vh;
+    text-align: center;
+    position: absolute;
+    top: 40%; left:  50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 3;
+    font-size: 2vw;
+    font-weight: bold;
+}
+section .phototab ul li a:after{
+    content: '';
+    position: absolute;
+    top: 60%; left:  50%;
+    transform: translate(-50%,0);
+    width: 20%;
+    height: 2px;
+    background: #fff;
+}
+section .phototab ul li p{
+    font-size: 2vw;
+    position: absolute;
+    top: 50%; left:  50%;
+    transform: translate(-50%, 30%);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+}
+section .phototab ul li img{
+    height: 100%;
+    transition: 0s;
+}
+section .phototab ul li:hover img{
+    transform: scale(1.2);
+}}
+
+
+@media (max-width:768px){
+section .top{
+    width: 100%; height: 30vh;
+    position: relative;
+}
+section .sub4_3{
+    background: url(../img/top4_3.jpg) no-repeat center/ cover;
+    margin-bottom: 3vh;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+section .gallery{
+    width: 90%;
+    height: 60vw;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/gallery01.jpg) no-repeat center; 
+}
+section .gallery a:nth-of-type(1){
+    position: absolute;
+    top: 50%; left: 2vw;
+    transform: translateY(-50%);
+}
+section .gallery a:nth-of-type(2){
+    position: absolute;
+    top: 50%; right: 2vw;
+    transform: translateY(-50%);
+}
+section .gallery a i{
+    color: #fff;
+    font-size: 5vw;
+}
+section .gallery figure{
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    padding: 3vw 0 2vw 3vw;
+}
+section .gallery figcaption{
+    color: #fff;
+    font-size: 3vw;
+}
+section .gallery figure:after{
+    content: '';
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 0;
+}
+section .phototab{
+    width: 100%;
+    margin: 10vw auto;
+}
+section .phototab ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+section .phototab ul li{
+    width: 24%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+}
+section .phototab ul li:after{
+    content: '';
+    width: 100%;
+    height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+}
+section .phototab ul li a{
+    width: 30vh;
+    line-height: 30vh;
+    text-align: center;
+    position: absolute;
+    top: 40%; left:  50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 3;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+section .phototab ul li a:after{
+    content: '';
+    position: absolute;
+    top: 60%; left:  50%;
+    transform: translate(-50%,0);
+    width: 20%;
+    height: 2px;
+    background: #fff;
+}
+section .phototab ul li p{
+    font-size: 2vw;
+    position: absolute;
+    top: 50%; left:  50%;
+    transform: translate(-50%, 30%);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+}
+section .phototab ul li img{
+    height: 100%;
+    transition: 0s;
+}
+section .phototab ul li:hover img{
+    transform: scale(1.2);
+}}
+
+
+@media (max-width:480px){
+    section .top{
+    width: 100%; height: 30vh;
+    position: relative;
+}
+section .sub4_3{
+    background: url(../img/top4_3.jpg) no-repeat center/ cover;
+    margin-bottom: 3vh;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+section .gallery{
+    width: 90%;
+    height: 60vw;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/gallery01.jpg) no-repeat center; 
+}
+section .gallery a:nth-of-type(1){
+    position: absolute;
+    top: 50%; left: 2vw;
+    transform: translateY(-50%);
+}
+section .gallery a:nth-of-type(2){
+    position: absolute;
+    top: 50%; right: 2vw;
+    transform: translateY(-50%);
+}
+section .gallery a i{
+    color: #fff;
+    font-size: 5vw;
+}
+section .gallery figure{
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    bottom: 0;
+    padding: 3vw 0 2vw 3vw;
+}
+section .gallery figcaption{
+    color: #fff;
+    font-size: 4vw;
+}
+section .gallery figure:after{
+    content: '';
+    width: 10%;
+    height: 5px;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    top: 0;
+}
+section .phototab{
+    width: 100%;
+    margin: 10vw auto;
+}
+section .phototab ul{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+section .phototab ul li{
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+}
+section .phototab ul li:after{
+    content: '';
+    width: 100%;
+    height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 2;
+}
+section .phototab ul li a{
+    width: 30vh;
+    line-height: 30vh;
+    text-align: center;
+    position: absolute;
+    top: 40%; left:  50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 3;
+    font-size: 4vw;
+    font-weight: bold;
+}
+section .phototab ul li a:after{
+    content: '';
+    position: absolute;
+    top: 55%; left:  50%;
+    transform: translate(-50%,0);
+    width: 20%;
+    height: 2px;
+    background: #fff;
+}
+section .phototab ul li p{
+    font-size: 4vw;
+    position: absolute;
+    top: 50%; left:  50%;
+    transform: translate(-50%, 30%);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+}
+section .phototab ul li img{
+    width: 100%;
+    transition: 0s;
+}
+section .phototab ul li:hover img{
+    transform: scale(1.2);
+}}

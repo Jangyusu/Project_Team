@@ -1,0 +1,65 @@
+@import url('common.css');
+.bottomline{width: 100%;margin-top: 20px; border-bottom: 1px solid #e3e3e3;}
+
+#wrap{width: 1910px; margin: 0 auto; overflow: hidden; }   
+header{padding-top: 10px;}
+header .header01{width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+header .header01 .headSearch{ width: 350px; height: 30px; border: 1px solid #e3e3e3; }
+header .header01 .headSearch form{width: 100%; display: flex; justify-content: space-between; align-items: center;}
+header .header01 .headSearch form input{height: 100%; width: 100%; outline-style: none;}
+header .header01 .headSearch form input:last-of-type{width: 27px; background: gray;}
+header .header01 .headSearch form input:first-of-type{border: none; font-size: 12px;padding-left: 10px;}
+header .header01 div{width: 200px; display: flex; justify-content: space-between;}
+header nav{width: 900px; margin: 0 auto;}
+header nav ul{ display: flex; justify-content: space-between; padding: 25px; position: relative;}
+header nav ul li{position: relative; width: 100%; text-align: center;}
+header nav ul:hover li ul{opacity: 1;}
+header nav ul:hover > div{opacity: .6;}
+header nav ul li a{font-size: 17px; color: black;}
+header nav ul li ul{ position: absolute; top: 50px; left: 0; padding: 0; display: flex; flex-direction: column; width: 100%; opacity: 0; z-index: 2;}
+header nav ul > div{width: 1910px; background: #061237; position: absolute; left: -505px; top: 74px; height: 100px; opacity: 0;}
+header nav ul li ul li{padding: 3px; z-index: 10;}
+header nav ul li ul li a{color: white; z-index: 10;} 
+
+section{width: 100%; }
+section article{position: relative; display: flex; justify-content: center; align-items: center;}
+section article h2{position: absolute; font-size: 42px; color: black;}
+section article img{}
+
+section .selecticon{ position: relative; left: 18%; display: flex; justify-content: flex-start; }
+section .selecticon a{margin: 20px 30px; text-align: center; font-size: 20px; color: black;}
+section .selecticon a:nth-of-type(1) i{color: red;}
+section .selecticon a:nth-of-type(1){color: red;}
+section .selecticon a i{font-size: 50px;}
+
+
+section .content{width: 100%; padding: 30px 0; display: flex; justify-content: center;}
+section .content .content01{position: relative;}
+section .content .content01 img{}
+section .content .content01 .subtext01{}
+section .content .content01 .subtext01 p{position: absolute; left: 200px; top: 200px; color: #41321d;}
+section .content .content01 .subtext01 p:first-of-type{ font-size: 58px;}
+section .content .content01 .subtext01 p:last-of-type{ top: 300px; font-size: 18px;}
+section .content .content01 .subtext01 .subbtn{position: absolute; left: 200px; top: 470px;}
+section .content .content01 .subtext01 .subbtn span{width: 200px; height: 50px; background: linear-gradient(to bottom, brown, #41321d);  padding: 15px 0 0px 30px; color: white;}
+section .content .content01 .subtext01 .subbtn img{ width: 15%; position: absolute; left: 140px;top: 7px;}
+
+section .content .content02{width: 100%; background: #41321d; }
+section .content .content02 ul{width: 100%; padding: 20px 160px;}
+section .content .content02 ul li{display: flex; justify-content: space-between; margin: 50px 0; }
+section .content .content02 ul li > div{display: flex; justify-content: flex-start;}
+section .content .content02 ul li p{ color: white; font-size: 14px;}
+section .content .content02 ul li p span{ color: #ffd97b; font-size: 16px;}
+section .content .content02 ul li p:nth-of-type(1){width: 35px; height: 35px; border-radius: 100%; background: #ffd97b; text-align: center; line-height: 35px; color: #41321d; font-size: 20px; margin-right: 30px;}
+
+footer{width: 100%; padding: 20px; z-index: 2;}
+footer .footer01{display: flex; justify-content: space-around; margin: 0 55px;}
+footer .footer01 .docmenu a{margin-right: 20px;}
+footer .footer01 .familysite{}
+footer .footer01 .familysite a{padding: 10px; border: 1px solid #e3e3e3;}
+footer .footer01 .familysite svg{margin-left: 15px;}
+footer .footer02{display: flex; justify-content: space-around; margin: 30px;}
+footer .footer02 > div{}
+footer .footer02 > div h2{float: left; margin-right: 30px;}
+footer .footer02 > div .address{float: left;}
+footer .footer02 p{}

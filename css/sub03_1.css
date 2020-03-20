@@ -1,0 +1,459 @@
+@import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+#wrap{ margin: 0 auto; overflow: hidden; }   
+
+section{
+    width: 100%;
+    margin-bottom: 197px;
+}
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .sub3_1{
+    background: url(../img/top3_1.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section .contents {
+    width: 60%;
+    margin: 0 auto;
+}
+section .contents .nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+section .contents .nav li {
+    width: 16.666666%;
+    text-align: center;
+
+}
+section .contents .nav li a {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-left: 0;
+    padding: 10px 0;
+    line-height: 30px;
+    font-size: 1rem;
+}
+section .contents .nav li:last-of-type a {
+    border-right: 0;
+}
+section .contents .nav li a:hover {
+    background: #354067;
+    color: #fff;
+}
+section .contents > p {
+    margin: 48px 0 40px 26px;
+}
+section .contents .content::before {
+    content: "" ;display: block;
+    width: 100%; height: 1px;
+    background: #aaa;  
+    margin-bottom: 46px;
+}
+section .contents .content {
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+}
+section .contents .content li {
+    width: 33%;
+    border: 1px solid #707070;
+    padding: 27px 16px;
+    margin-bottom: 0.5%;
+    display: flex; flex-direction: column; justify-content: space-between;
+    position: relative;
+}
+section .contents .content li>a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+section .contents .content li strong {
+    margin-bottom: 26px;
+}
+section .contents .content li img {
+    width: 100%;
+}
+section .contents .content li p {
+    text-align: right;
+}
+section .contents .content li p a {
+    width: 100px;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    padding: 0 11px;
+    margin-top: 28px;
+}
+section .contents .content li p a span {
+    margin-right: 5px;
+}
+section .contents .content li p a i {
+    color: #7f7f7f;
+    line-height: 40px;
+}
+
+@media (max-width:1024px){
+    section{
+    width: 100%;
+    margin-bottom: 3vh;
+}
+section .top{
+    width: 100%; height: 30vh;
+    position: relative;
+}
+section .sub3_1{
+    background: url(../img/top3_1.jpg) no-repeat center/ cover;
+    margin-bottom: 5vh;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section .contents {
+    width: 80%;
+    margin: 0 auto;
+}
+section .contents .nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+section .contents .nav li {
+    width: 16.666666%;
+    text-align: center;
+}
+section .contents .nav li a {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-left: 0;
+    padding: 2vw 0;
+    line-height: 2.5vw;
+    font-size: 2vw;
+}
+section .contents .nav li:last-of-type a {
+    border-right: 0;
+}
+section .contents .nav li a:hover {
+    background: #354067;
+    color: #fff;
+}
+section .contents > p {
+    margin: 3vh 2vh;
+}
+section .contents .content::before {
+    content: "" ;display: block;
+    width: 100%; height: 1px;
+    background: #aaa;  
+    margin-bottom: 46px;
+}
+section .contents .content {
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+}
+section .contents .content li {
+    width: 33%;
+    border: 1px solid #707070;
+    padding: 2vh 0;
+    margin-bottom: 0.5%;
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+section .contents .content li>a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+section .contents .content li strong {
+    margin-bottom: 0;
+    font-size: 2vw;
+}
+section .contents .content li img {
+    width: 100%;
+}
+section .contents .content li p {
+    text-align: right;
+}
+section .contents .content li p a {
+    width: 100px;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    padding: 0 11px;
+    margin-top: 28px;
+}
+section .contents .content li p a span {
+    margin-right: 5px;
+}
+section .contents .content li p a i {
+    color: #7f7f7f;
+    line-height: 40px;
+}}
+@media (max-width:768px){
+    section{
+    width: 100%;
+    margin-bottom: 3vh;
+}
+section .top{
+    width: 100%; height: 30vh;
+    position: relative;
+}
+section .sub3_1{
+    background: url(../img/top3_1.jpg) no-repeat center/ cover;
+    margin-bottom: 5vh;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section .contents {
+    width: 80%;
+    margin: 0 auto;
+}
+section .contents .nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+section .contents .nav li {
+    width: 16.666666%;
+    text-align: center;
+}
+section .contents .nav li a {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-left: 0;
+    padding: 2vw 0;
+    line-height: 2.5vw;
+    font-size: 2vw;
+}
+section .contents .nav li:last-of-type a {
+    border-right: 0;
+}
+section .contents .nav li a:hover {
+    background: #354067;
+    color: #fff;
+}
+section .contents > p {
+    margin: 3vh 2vh;
+}
+section .contents .content::before {
+    content: "" ;display: block;
+    width: 100%; height: 1px;
+    background: #aaa;  
+    margin-bottom: 46px;
+}
+section .contents .content {
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+}
+section .contents .content li {
+    width: 33%;
+    border: 1px solid #707070;
+    padding: 2vh 0;
+    margin-bottom: 0.5%;
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+section .contents .content li>a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+section .contents .content li strong {
+    margin-bottom: 0;
+    font-size: 2vw;
+    text-align: center;
+}
+section .contents .content li img {
+    width: 100%;
+    display: none;
+}
+section .contents .content li p {
+    text-align: right;
+}
+section .contents .content li p a {
+    width: 100px;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    padding: 0 11px;
+    margin-top: 28px;
+    display: none;
+}
+section .contents .content li p a span {
+    margin-right: 5px;
+}
+section .contents .content li p a i {
+    color: #7f7f7f;
+    line-height: 40px;
+}
+}
+@media (max-width:480px){
+    section{
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+    section .top{
+        width: 100%; height: 30vh;
+        position: relative;
+    }
+    section .sub3_1{
+        background: url(../img/top3_1.jpg) no-repeat center/ cover;
+        margin-bottom: 5vh;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 30vh;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 60%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .contents {
+        width: 80%;
+        margin: 0 auto;
+    }
+    section .contents .nav {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+    section .contents .nav li {
+        width: 16.666666%;
+        text-align: center;
+    }
+    section .contents .nav li a {
+        width: 100%;
+        border: 1px solid #aaa;
+        border-left: 0;
+        padding: 2vw 0;
+        line-height: 4vw;
+        font-size: 3vw;
+    }
+    section .contents .nav li:last-of-type a {
+        border-right: 0;
+    }
+    section .contents .nav li a:hover {
+        background: #354067;
+        color: #fff;
+    }
+    section .contents > p {
+        margin: 3vh 2vh;
+    }
+    section .contents .content::before {
+        content: "" ;display: block;
+        width: 100%; height: 1px;
+        background: #aaa;  
+        margin-bottom: 46px;
+    }
+    section .contents .content {
+        display: flex; justify-content: space-between; flex-wrap: wrap;
+    }
+    section .contents .content li {
+        width: 33%;
+        border: 1px solid #707070;
+        padding: 2vh 0;
+        margin-bottom: 0.5%;
+        display: flex; flex-direction: column; justify-content: space-between;
+    }
+    section .contents .content li>a{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%; top: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+    }
+    section .contents .content li strong {
+        margin-bottom: 0;
+        font-size: 3.5vw;
+        text-align: center;
+    }
+    section .contents .content li img {
+        width: 100%;
+        display: none;
+    }
+    section .contents .content li p {
+        text-align: right;
+    }
+    section .contents .content li p a {
+        width: 100px;
+        border: 1px solid #a9a9a9;
+        text-align: center;
+        padding: 0 11px;
+        margin-top: 28px;
+        display: none;
+    }
+    section .contents .content li p a span {
+        margin-right: 5px;
+    }
+    section .contents .content li p a i {
+        color: #7f7f7f;
+        line-height: 40px;
+    }
+}

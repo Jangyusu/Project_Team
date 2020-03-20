@@ -1,0 +1,745 @@
+@import url(common.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+/** font
+
+font-family: 'NanumSquare', sans-serif
+font-family: 'Nanum Gothic', sans-serif;
+
+**/
+
+
+/********** body **********/
+
+html, body {
+    color: #333;
+}
+
+/*************** content ***************/
+
+section{
+    width: 100%;
+}
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+/* 여기에 클래스명과 이미지파일 교체해야함. */
+section .sub5_2{
+    background: url(../img/sub/img_sub01.jpg) no-repeat center/ cover;
+}
+
+.con .top {
+    height: 300px;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 3.125rem;
+    font-weight: 800;
+    color: #fff;
+}
+.content > ul {
+    width: 67%; margin: 0 auto 109px;
+    display: flex; justify-content: center;
+    border-bottom: 1px solid #858585;
+}
+.content > ul li {
+    width: 33.33%;
+    text-align: center;
+    
+}
+.content > ul li a {
+    padding: 48px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    opacity: .8;
+}
+.content > ul li a:hover {
+    opacity: 1;
+}
+.content > ul li a::after {
+    content: "";
+    width: 0%; height: 2px;
+    background: #333;
+    display: block;
+    margin-top: 5px;
+    opacity: 0;
+    transition: .5s;
+}
+.content > ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+/* Section -> .content 세팅 */
+.contentBox{
+    position: relative;
+    overflow: hidden;
+    width: 79%;
+    margin: 0 auto;
+}
+
+/* .content -> .con1~3 position */
+/* .content .con_01{
+    position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
+}
+.content .con_02{
+    position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
+}
+.content .con_03{
+    position: absolute; left: 50%; top: 50%; transform: translatex(-50%);
+} */
+.con_01 .top {
+    background: url(../img/sub/img_sub01.jpg) no-repeat center;
+}
+.con_01 {
+    width: 100%;
+    margin: 0 auto;
+}
+.con_01 .main {
+    width: 100%;
+    margin: 0 auto;
+}
+.con_01 .main_top {
+    width: 100%;
+}
+.con_01 .main_top > div {
+    display: flex;
+    padding-left: 60px;
+}
+.con_01 .main_top > div:last-of-type {
+    margin: 60px 0;
+}
+.con_01 .main_top div span {
+    width: 155px; height: 155px;
+    background: #354067;
+    border-radius: 100%;
+    display: flex; justify-content: center; align-items: center;
+    margin-right: 31px;
+}
+.con_01 .main_top div .text {
+    display: flex; flex-direction: column; justify-content: center;
+    width: 80%;
+}
+.con_01 .main_top div .text p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 60px;
+}
+.con_01 .main_top div .text p:last-of-type {
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 24px;
+    width: 890px;
+}
+
+.con_01 .main .bottom {
+    text-align: center;
+    padding-bottom: 400px;
+}
+.con_01 .main .bottom > p {
+    font-size: 1.875rem;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+.con_01 .main .bottom ul {
+    width: 100%;
+    display: flex; justify-content: space-between;
+    border: 1px solid #7a7a7a;
+    position: relative;
+}
+.con_01 .main .bottom ul li {
+    width: 33.33%;    
+}
+.con_01 .main .bottom ul li a {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;    
+    line-height: 50px;
+    background: #e5e5e5;
+    border-right: 1px solid #7a7a7a;
+    transition: .5s;
+}
+.con_01 .main .bottom ul li:last-of-type a {
+    border-right: none;
+}
+.con_01 .main .bottom ul li a:hover {
+    color: #fff;
+    background: #354067;
+    border-right: 1px solid #343848;
+}
+.con_01 .main .bottom ul li .text {
+    width: 100%;
+    display: none; flex-direction: column; align-items: center;
+    position: absolute; left: 0; top: 115px;
+}
+
+/* 지울예정 기능으로대체
+.con_01 .main .bottom ul li:hover .text {
+    display: flex;
+} */
+.con_01 .main .bottom ul li .text p:first-of-type {
+    width: 155px; height: 155px;
+    background: #354067;
+    border-radius: 100%;
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 35px;
+}
+.con_01 .main .bottom ul li .text p:last-of-type {
+    font-size: 1.375rem;
+    line-height: 32px;
+}
+
+
+.con_02 .top {
+    background: url(../img/sub/img_sub02.jpg) no-repeat center;
+}
+.con_02 .main {
+    width: 999px; margin: 0 auto 150px;
+}
+.con_02 .main ul {
+    width: 100%;
+    background: #354067;
+    border-radius: 50px;
+    display: flex; flex-wrap: wrap;
+    overflow: hidden;
+}
+.con_02 .main ul li {
+    width: 33.333333%; height: 200px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex; flex-direction: column; justify-content: flex-end; align-items: center;
+}
+.con_02 .main ul li:nth-of-type(3n) {
+    border-right: 0;
+}
+.con_02 .main ul li:hover {
+    background: #ffd617;
+}
+.con_02 .main ul li > p:last-of-type {
+    font-size: 1.125rem;
+    color: #fff;
+    line-height: 30px;
+    margin: 20px 0 30px;
+}
+.con_02 .main ul li div, .con_02 .main ul li:last-of-type:hover > p {
+    display: none;
+}
+.con_02 .main ul li:last-of-type:hover div {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.con_02 .main ul li div p {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #000;
+}
+.con_02 .main ul li div p span {
+    color: #f00;
+}
+.con_02 .main ul li div a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid #000;
+    line-height: 37px;
+    padding: 0 23px;
+    margin: 30px 0;
+}
+
+
+.con_03 .top {
+    background: url(../img/sub/img_sub03.jpg) no-repeat center;
+}
+.con_03 .main {
+    width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.con_03 .main > ul {
+    height: 850px;
+    margin: 0 auto;
+    position: relative;
+    
+    left: 0%;
+    transition: .7s;
+}
+.con_03 .main > ul > li:nth-of-type(1) {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+.con_03 .main > ul > li:nth-of-type(2) {
+    position: absolute;
+    left: 120%;
+    top: 0%;
+}
+.con_03 .main > ul > li:nth-of-type(3) {
+    position: absolute;
+    left: 240%;
+    top: 0%;
+}
+
+.con_03 .main > ul > li > p {
+    width: 232px; height: 232px;
+    margin: 0 auto 100px;
+    background: #354067;
+    border-radius: 100%;   
+    color: #fff;
+    font-size: 1.875rem;
+    font-weight: 800;
+    display: flex; justify-content: center; align-items: center;
+}
+.con_03 .main > ul > li .graph {}
+.con_03 .main > ul > li .graph ul {}
+.con_03 .main > ul > li .graph ul li {
+    display: flex; align-items: center;
+    margin-bottom: 100px;
+}
+.con_03 .main > ul > li .graph ul li:last-of-type {
+    margin: 0;
+}
+.con_03 .main > ul > li .graph ul li > p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 80px;
+}
+.con_03 .main > ul > li .graph ul li div {
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
+    width: 680px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(2) div p:first-of-type {
+    width: 600px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(3) div p:first-of-type {
+    width: 520px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(4) div p:first-of-type {
+    width: 400px; height: 16px;
+    background: #354067;
+    border-radius: 50px;
+    position: relative;
+}
+.con_03 .main > ul > li .graph ul li div p:first-of-type span {
+    font-size: 1rem ;
+    font-weight: bold;
+    position: absolute; right: 20px; top: 0;
+    transform: translateY(-120%);
+}
+.con_03 .main > ul > li .graph ul li div p:last-of-type {
+    width: 50px; height: 50px;
+    background: #354067;
+    display: flex; justify-content: center; align-items: center;
+    border-radius: 100%;
+    position: absolute; right: -30px; top: -100%;
+}
+.con_03 .main > ul > li .graph ul li div p:last-of-type span {
+    width: 30px; height: 30px;
+    background: #fff;
+    border-radius: 100%;
+}
+
+.con_03 .main > div {
+    display: flex; justify-content: center;
+    margin-bottom: 192px;
+}
+.con_03 .main > div a {
+    margin-right: 15px;
+    
+}
+.con_03 .main > div a:last-of-type {
+    margin: 0;
+}
+.con_03 .main > div a span{
+    display: block;
+}
+
+.con_03 .main > div a {
+    width: 31px; height: 31px;
+    background: #354067;
+    border-radius: 100%;
+}
+.con_03 .main > div .con03_span_on {
+    width: 126px; height: 31px;
+    background: #ffd617;
+    border-radius: 100px;
+}
+/* con&main default */
+.con{
+    opacity: 0;
+    position: absolute; left: 50%; top: 100%; transform: translatex(-50%);
+    transition: 2s;
+    z-index: 9;
+}
+.main{display: none;}
+
+/* con&main On */
+.con_on{
+    opacity: 1;
+    top: 0%;
+    transition: 1s;
+    z-index: 10;
+}
+.main_on{
+    display: block;
+}
+
+.con_01 .main .bottom ul li .text_on{display: flex;}
+.con_01 .main .bottom ul li .con01_main_on{
+    color: #fff;
+    background: #354067;
+    border-right: 1px solid #343848;
+}
+
+@media (max-width: 1320px){
+
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
+    /* con01 반응형 */
+    .con_01 .main_top {
+        width: 100%;
+    }
+    .con_01 .main_top > div {
+        padding-left: 60px;
+    }
+    .con_01 .main_top div span img{
+        width: 50px;
+    }
+
+    .con_01 .main_top div .text{
+        width: 80%;
+    }
+    .con_01 .main_top div .text p:first-of-type {
+        font-size: 1rem;
+    }
+    .con_01 .main_top div .text p:last-of-type {
+        font-size: .8rem;
+        width: 100%;
+    }
+
+    /* con02 반응형 */
+    .con_02 .main ul li {
+        width: 50%; height: 200px;
+    }
+    .con_02 .main ul li:nth-of-type(3n) {
+        border-right: 1px solid #fff;
+    }
+    .con_02 .main ul li:nth-of-type(2n) {
+        border-right: 0;
+    }
+    .con_02 .main ul {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+.con_03  {width: 100%;}
+.con_03 .main  {width: 90%;}
+.con_03 .main > ul > li .graph ul {width: 100%;}
+.con_03 .main > ul > li .graph ul li {
+    display: flex; align-items: center;
+    margin-bottom: 100px;
+}
+.con_03 .main > ul > li .graph ul li div{
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
+    width: 550px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(2) div p:first-of-type {
+    width: 520px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(3) div p:first-of-type {
+    width: 440px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(4) div p:first-of-type {
+    width: 360px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li div p:last-of-type {
+    width: 50px; height: 50px;
+    right: -20px;
+}
+}
+
+@media (max-width: 900px){
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
+    /* sub contentUl 반응형 */
+    .content > ul {
+        width: 80%; margin: 0 auto 60px;
+    }
+
+    /* con01 반응형 */
+    .con_01 .main_top {
+        width: 100%;
+    }
+    .con_01 .main_top > div {
+        padding-left: 60px;
+    }
+
+    .con_01 .main_top div span{
+        width: 100px;
+        height: 100px;
+    }
+    .con_01 .main_top div span img{
+        width: 35px;
+    }
+
+    .con_01 .main_top div .text{
+        width: 65%;
+    }
+    .con_01 .main_top div .text p:first-of-type {
+        font-size: .8rem;
+    }
+    .con_01 .main_top div .text p:last-of-type {
+        font-size: .7rem;
+        width: 100%;
+    }
+    .con_01 .main .bottom > p {
+        font-size: 1.4rem;
+    }
+    .con_01 .main .bottom ul li a {
+        font-size: 1.2rem;
+    }
+    .con_01 .main .bottom ul li .text p:last-of-type {
+        font-size: 1.2rem;
+        line-height: 32px;
+    }
+
+    /* con02 반응형 */
+    .con_02 .main ul {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .con_02 .main ul li {
+        width: 50%; height: 200px;
+    }
+    .con_02 .main ul li > p:last-of-type {
+        font-size: 0.8rem;
+        color: #fff;
+        line-height: 30px;
+        margin: 20px 0 30px;
+    }
+    .con_02 .main ul li div p {
+        font-size: 1.2rem;
+    }
+    .con_02 .main ul li div a {
+        font-size: 1rem;
+    }
+
+.con_03  {width: 100%;}
+.con_03 .main  {width: 100%;}
+.con_03 .main > ul > li .graph ul {width: 100%;}
+.con_03 .main > ul > li .graph ul li {
+    display: flex; align-items: center;
+    margin-bottom: 100px;
+}
+.con_03 .main > ul > li .graph ul li > p{
+    font-size: 1.1rem;
+    margin-right: 6px;
+    width: 60px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
+    width: 450px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(2) div p:first-of-type {
+    width: 420px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(3) div p:first-of-type {
+    width: 340px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(4) div p:first-of-type {
+    width: 260px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li div p:last-of-type {
+    width: 50px; height: 50px;
+    right: -20px;
+}
+}
+
+@media (max-width: 600px){
+
+    .contentBox{
+        width: 100%;
+    }
+    
+    /* sub contentUl 반응형 */
+    .content > ul {
+        width: 95%; margin: 0 auto 45px;
+        display: flex; justify-content: center;
+        border-bottom: 1px solid #858585;
+    }
+
+    .content > ul li {
+        width: 33.33%;
+        text-align: center;
+        
+    }
+    .content > ul li a {
+        padding: 30px 0;
+        font-size: .8rem;
+        font-weight: bold;
+        opacity: .8;
+    }
+    .con_01 .main_top > div {
+        padding-left: 40px;
+    }
+    .con_01 .main .bottom > p {
+        font-size: 1.2rem;
+    }
+    .con_01 .main .bottom ul li a {
+        font-size: 1rem;
+    }
+    .con_01 .main .bottom ul li .text p:last-of-type {
+        font-size: 1rem;
+        line-height: 32px;
+    }
+
+    /* con02 반응형 */
+    .con_02{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .con_02 .main {
+        width: 100%; margin: 0 auto 60px;
+    }
+    .con_02 .main ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .con_02 .main ul li {
+        width: 100%; height: 200px;
+        margin-right: 0;
+    }
+    .con_02 .main ul li > p:last-of-type {
+        font-size: 0.8rem;
+        color: #fff;
+        line-height: 30px;
+        margin: 20px 0 30px;
+    }
+    .con_02 .main ul li div p {
+        font-size: 1.2rem;
+    }
+    .con_02 .main ul li div a {
+        font-size: 1rem;
+    }
+
+    
+.con_03  {width: 100%;}
+.con_03 .main  {width: 83%;}
+.con_03 .main > ul > li .graph ul {width: 100%;}
+.con_03 .main > ul > li .graph ul li {
+    display: flex; align-items: center;
+    margin-bottom: 100px;
+}
+.con_03 .main > ul > li .graph ul li > p{
+    font-size: 1.1rem;
+    margin-right: 6px;
+    width: 60px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
+    width: 350px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(2) div p:first-of-type {
+    width: 320px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(3) div p:first-of-type {
+    width: 240px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li:nth-of-type(4) div p:first-of-type {
+    width: 160px; height: 16px;
+}
+.con_03 .main > ul > li .graph ul li div p:last-of-type {
+    width: 50px; height: 50px;
+    right: -20px;
+}
+.con_03 .main > ul > li .graph ul li div p:first-of-type span {
+    font-size: .9rem ;
+}
+}
+@media (max-width: 480px){
+    section .top h2{
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+
+    .con_03 .main > ul > li .graph ul li p{
+        font-size: .9rem;
+        margin-right: 6px;
+        width: 50px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(1) div p:first-of-type {
+        width: 250px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(2) div p:first-of-type {
+        width: 220px; height: 16px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(3) div p:first-of-type {
+        width: 170px; height: 16px;
+    }
+    .con_03 .main > ul > li .graph ul li:nth-of-type(4) div p:first-of-type {
+        width: 120px; height: 16px;
+    }
+    .con_03 .main > ul > li .graph ul li div p:last-of-type {
+        width: 50px; height: 50px;
+        right: -20px;
+    }
+
+    .con_03 .main > ul > li .graph ul li div p:first-of-type span {
+        font-size: .7rem ;
+    }
+
+}

@@ -1,0 +1,685 @@
+@import url('common.css');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* font-family: 'NanumSquare', sans-serif; */
+
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section .sub5_2{
+    background: url(../img/top5_2.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
+}
+section .sub5_2content{
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+section .title{
+    width: 1275px;
+    margin:55px auto 48px;
+}
+section h3{
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: left;
+}
+section .sub5_2content .location{
+    width: 1275px;
+    margin: 0 auto;
+    border-bottom: 1px solid #344066;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+section .sub5_2content .location a{
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative;
+}
+section .sub5_2content .location a:after{
+    content: '';
+    width: 0; height: 2px;
+    background: #344066;
+    position: absolute;
+    top:90%; left: 50%;
+    transition: .5s;
+}
+section .sub5_2content .location a:hover:after{
+    width: 100%;
+    left: 0;
+}
+section .sub5_2content .tap{
+    width: 1275px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #666;
+}
+section .sub5_2content .tap a{
+    width: 100%;
+    font-size: 1.375rem;
+    line-height: 50px;
+    font-weight: bold;
+    border-right: 1px solid #666;
+    text-align: center;
+    transition: .5s;
+}
+section .sub5_2content .tap a:last-child{
+    width: 100%;
+    font-size: 1.375rem;
+    line-height: 50px;
+    font-weight: bold;
+    border-right: none;
+}
+section .sub5_2content .tap a:first-child{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+section .sub5_2content .tap a:hover{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+
+section .sub5_2content #map{
+    width: 1275px; height: 444px;
+    margin: 70px auto 0;
+    background: #eee;
+}
+section .sub5_2content .contact{
+    width: 1275px;
+    margin: 0 auto;
+    background: #354067;
+}
+section .sub5_2content .contact ul{
+    display: flex;
+    justify-content: flex-start;
+}
+section .sub5_2content .contact ul li{
+    color:#fff;
+    line-height: 40px;
+    padding: 20px 0 20px 40px;
+}
+section .way{
+    width: 1275px;
+    margin:55px auto 48px;
+}
+section .way h4{
+    margin:50px 0 20px 70px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+section .way p{
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+section .way table{
+    border: 1px solid #333;
+    margin: 20px 0 20px 70px;
+    text-align: center;
+    border-collapse: collapse;
+}
+section .way table thead th{
+    background:#eee;
+}
+section .way table th{
+    border: 1px solid #333;
+    padding:5px 10px;
+    font-weight: bold;
+}
+section .way table td{
+    border: 1px solid #333;
+    padding:5px 40px;
+    font-weight: bold;
+}
+section .way table thead th:nth-of-type(1){
+    border: 1px solid #333;
+    padding:5px 70px;
+    font-weight: bold;
+}
+section .way table thead th:nth-of-type(2):nth-of-type(5){
+    border: 1px solid #333;
+    padding:5px 40px;
+    font-weight: bold;
+}
+
+/* sub5_2 */
+
+
+
+@media (max-width:1024px){
+    section .top{
+        width: 100%; height: 40vw;
+        position: relative;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 40vw;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .sub5_2{
+        background: url(../img/top5_2.jpg) no-repeat center/ cover;
+        margin-bottom: 1vh;
+    }
+    section .sub5_2content{
+        width: 100%;
+        padding-top: 1.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    section .title{
+        width: 80%;
+        margin:2vh auto 2vh;
+    }
+    section h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    section .sub5_2content .location{
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid #344066;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 1vh;
+    }
+    section .sub5_2content .location a{
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+    }
+    section .sub5_2content .location a:after{
+        content: '';
+        width: 0; height: 3px;
+        background: #344066;
+        position: absolute;
+        top:90%; left: 50%;
+        transition: .5s;
+    }
+    section .sub5_2content .location a:hover:after{
+        width: 100%;
+        left: 0;
+    }
+    section .sub5_2content .tap{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #666;
+    }
+    section .sub5_2content .tap a{
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 3vh;
+        font-weight: bold;
+        border-right: 1px solid #666;
+        text-align: center;
+        transition: .5s;
+    }
+    section .sub5_2content .tap a:last-child{
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 3vh;
+        font-weight: bold;
+        border-right: none;
+    }
+    section .sub5_2content .tap a:first-child{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    section .sub5_2content .tap a:hover{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    
+    section .sub5_2content #map{
+        width: 80%; height: 20vh;
+        margin: 2vh auto 0;
+        background: #eee;
+    }
+    section .sub5_2content .contact{
+        width: 80%;
+        margin: 0 auto;
+        background: #354067;
+    }
+    section .sub5_2content .contact ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    section .sub5_2content .contact ul li{
+        color:#fff;
+        line-height: 2vh;
+        padding: 1vh 0 1vh 1vh;
+        font-size: 1rem;
+    }
+    section .way{
+        width: 80%;
+        margin:1.5vh auto;
+    }
+    section .way h4{
+        margin:1vh 0 1vh 1vh;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    section .way p{
+        margin-left: 0;
+        line-height: 1.2rem;
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1vh;
+    }
+    section .way table{
+        border: 1px solid #333;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    section .way table thead th{
+        background:#eee;
+    }
+    section .way table th{
+        border: 1px solid #333;
+        padding:5px 2vw;
+        font-weight: bold;
+    }
+    section .way table td{
+        border: 1px solid #333;
+        padding:5px 3vw;
+        font-weight: bold;
+    }
+    section .way table thead th:nth-of-type(1){
+        border: 1px solid #333;
+        padding:5px 2vw;
+        font-weight: bold;
+    }
+    section .way table thead th:nth-of-type(2):nth-of-type(5){
+        border: 1px solid #333;
+        padding:5px 0;
+        font-weight: bold;
+    }
+}
+
+@media (max-width:768px){
+    section .top{
+        width: 100%; height: 40vw;
+        position: relative;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 40vw;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .sub5_2{
+        background: url(../img/top5_2.jpg) no-repeat center/ cover;
+        margin-bottom: 1vh;
+    }
+    section .sub5_2content{
+        width: 100%;
+        padding-top: 1.5vh;
+        display: flex;
+        flex-direction: column;
+    }
+    section .title{
+        width: 80%;
+        margin:2vh auto 2vh;
+    }
+    section h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    section .sub5_2content .location{
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid #344066;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 1vh;
+    }
+    section .sub5_2content .location a{
+        font-size: 1rem;
+        font-weight: bold;
+        position: relative;
+    }
+    section .sub5_2content .location a:after{
+        content: '';
+        width: 0; height: 3px;
+        background: #344066;
+        position: absolute;
+        top:90%; left: 50%;
+        transition: .5s;
+    }
+    section .sub5_2content .location a:hover:after{
+        width: 100%;
+        left: 0;
+    }
+    section .sub5_2content .tap{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #666;
+    }
+    section .sub5_2content .tap a{
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 3vh;
+        font-weight: bold;
+        border-right: 1px solid #666;
+        text-align: center;
+        transition: .5s;
+    }
+    section .sub5_2content .tap a:last-child{
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 3vh;
+        font-weight: bold;
+        border-right: none;
+    }
+    section .sub5_2content .tap a:first-child{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    section .sub5_2content .tap a:hover{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    
+    section .sub5_2content #map{
+        width: 80%; height: 20vh;
+        margin: 2vh auto 0;
+        background: #eee;
+    }
+    section .sub5_2content .contact{
+        width: 80%;
+        margin: 0 auto;
+        background: #354067;
+    }
+    section .sub5_2content .contact ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    section .sub5_2content .contact ul li{
+        color:#fff;
+        line-height: 2vh;
+        padding: 1vh 0 1vh 1vh;
+        font-size: 1rem;
+    }
+    section .way{
+        width: 80%;
+        margin:1.5vh auto;
+    }
+    section .way h4{
+        margin:1vh 0 1vh 1vh;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    section .way p{
+        margin-left: 0;
+        line-height: 1.2rem;
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 1vh;
+    }
+    section .way table{
+        border: 1px solid #333;
+        margin: 0 auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    section .way table thead th{
+        background:#eee;
+    }
+    section .way table th{
+        border: 1px solid #333;
+        padding:5px 1vh;
+        font-weight: bold;
+    }
+    section .way table td{
+        border: 1px solid #333;
+        padding:5px 0.5vh;
+        font-weight: bold;
+    }
+    section .way table thead th:nth-of-type(1){
+        border: 1px solid #333;
+        padding:5px 1vh;
+        font-weight: bold;
+    }
+    section .way table thead th:nth-of-type(2):nth-of-type(5){
+        border: 1px solid #333;
+        padding:5px 0;
+        font-weight: bold;
+    }
+}
+    
+
+@media (max-width:480px){
+section .top{
+    width: 100%; height: 40vw;
+    position: relative;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 40vw;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section .sub5_2{
+    background: url(../img/top5_2.jpg) no-repeat center/ cover;
+    margin-bottom: 1vh;
+}
+section .sub5_2content{
+    width: 100%;
+    padding-top: 1.5vh;
+    display: flex;
+    flex-direction: column;
+}
+section .title{
+    width: 80%;
+    margin:2vh auto 2vh;
+}
+section h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+section .sub5_2content .location{
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #344066;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vh;
+}
+section .sub5_2content .location a{
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+section .sub5_2content .location a:after{
+    content: '';
+    width: 0; height: 3px;
+    background: #344066;
+    position: absolute;
+    top:90%; left: 50%;
+    transition: .5s;
+}
+section .sub5_2content .location a:hover:after{
+    width: 100%;
+    left: 0;
+}
+section .sub5_2content .tap{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #666;
+}
+section .sub5_2content .tap a{
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 3vh;
+    font-weight: bold;
+    border-right: 1px solid #666;
+    text-align: center;
+    transition: .5s;
+}
+section .sub5_2content .tap a:last-child{
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 3vh;
+    font-weight: bold;
+    border-right: none;
+}
+section .sub5_2content .tap a:first-child{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+section .sub5_2content .tap a:hover{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+
+section .sub5_2content #map{
+    width: 80%; height: 20vh;
+    margin: 2vh auto 0;
+    background: #eee;
+}
+section .sub5_2content .contact{
+    width: 80%;
+    margin: 0 auto;
+    background: #354067;
+}
+section .sub5_2content .contact ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+section .sub5_2content .contact ul li{
+    color:#fff;
+    line-height: 2vh;
+    padding: 1vh 0 1vh 1vh;
+    font-size: 1rem;
+}
+section .way{
+    width: 80%;
+    margin:1.5vh auto;
+}
+section .way h4{
+    margin:1vh 0 1vh 1vh;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+section .way p{
+    margin-left: 0;
+    line-height: 1.2rem;
+    margin-top: 1vh;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 1vh;
+}
+section .way table{
+    border: 1px solid #333;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+section .way table thead th{
+    background:#eee;
+}
+section .way table th{
+    border: 1px solid #333;
+    padding:5px 0;
+    font-weight: bold;
+}
+section .way table td{
+    border: 1px solid #333;
+    padding:5px 0.5vh;
+    font-weight: bold;
+}
+section .way table thead th:nth-of-type(1){
+    border: 1px solid #333;
+    padding:5px 1vh;
+    font-weight: bold;
+}
+section .way table thead th:nth-of-type(2):nth-of-type(5){
+    border: 1px solid #333;
+    padding:5px 0;
+    font-weight: bold;
+}
+}

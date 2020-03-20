@@ -1,0 +1,493 @@
+@import url('common.css');
+
+section .top{
+    width: 100%; height: 410px;
+    position: relative;
+}
+section .sub5_1{
+    background: url(../img/top5_1.jpg) no-repeat center/ cover;
+    margin-bottom: 100px;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 410px;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 3.125rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 60%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section .sub5_1content{
+    width: 100%;
+    padding-top: 140px;
+}
+section .sub5_1content .tap{
+    width: 1275px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #666;
+}
+section .sub5_1content .tap a{
+    width: 100%;
+    font-size: 1.375rem;
+    line-height: 50px;
+    font-weight: bold;
+    border-right: 1px solid #666;
+    text-align: center;
+    transition: .5s;
+}
+section .sub5_1content .tap a:last-child{
+    width: 100%;
+    font-size: 1.375rem;
+    line-height: 50px;
+    font-weight: bold;
+    border-right: none;
+}
+section .sub5_1content .tap a:first-child{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+section .sub5_1content .tap a:hover{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+
+section .sub5_1content .content{
+    width: 1275px; height: 412px;
+    margin: 70px auto 140px;
+}
+section .sub5_1content .content > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section .sub5_1content .content > ul > li{
+    display: flex;
+    margin-bottom:8px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+section .sub5_1content .content > ul > li > a{
+    width: 319px;
+    background: #e5e5e5;
+    font-size: 1.25rem;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+section .sub5_1content .content > ul > li > ul{
+    width: 956px;
+    display: flex;
+    justify-content: flex-start;
+    background: #eeeeee;
+}
+section .sub5_1content .content > ul > li > ul li a{
+    font-size: 1.25rem;
+    margin-left: 70px;
+    line-height: 100px;
+    font-weight: bold;
+}
+section .sub5_1content .contact{
+    width: 1275px;
+    margin: 0 auto 87px;
+    background: #354067;
+    border-radius: 10px;
+}
+section .sub5_1content .contact ul{
+    display: flex;
+    justify-content: space-around;
+}
+section .sub5_1content .contact ul li{
+    color:#fff;
+    line-height: 40px;
+}
+
+/* sub5_1 */
+
+
+@media (max-width:1024px){
+    section .top{
+    width: 100%; height: 30vh;
+    position: relative;
+}
+section .sub5_1{
+    background: url(../img/top5_1.jpg) no-repeat center/ cover;
+    margin-bottom: 3vh;
+}
+section .top:after{
+    content: '';
+    width: 100%; height: 30vh;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+section .top h2{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+section .sub5_1content{
+    width: 100%;
+    padding-top: 0;
+}
+section .sub5_1content .tap{
+    width: 93%;
+    margin:0 auto 3vh;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #666;
+}
+section .sub5_1content .tap a{
+    width: 100%;
+    font-size: 2.5vw;
+    line-height: 7vw;
+    font-weight: bold;
+    border-right: 1px solid #666;
+    text-align: center;
+    transition:0;
+}
+section .sub5_1content .tap a:last-child{
+    width: 100%;
+    font-size: 2.5vw;
+    line-height: 7vw;
+    font-weight: bold;
+    border-right: none;
+}
+section .sub5_1content .tap a:first-child{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+section .sub5_1content .tap a:hover{
+    background: #354067;
+    color: #fff;
+    font-weight: bolder;
+}
+
+section .sub5_1content .content{
+    width: 93%; height:10vh;
+    margin: 1vh auto 10vh;
+}
+section .sub5_1content .content > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section .sub5_1content .content > ul > li{
+    display: flex;
+    margin-bottom:8px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+section .sub5_1content .content > ul > li > a{
+    width: 25%;
+    background: #e5e5e5;
+    font-size: 2.5vw;
+    line-height: 8vw;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+section .sub5_1content .content > ul > li > ul{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    background: #eeeeee;
+}
+section .sub5_1content .content > ul > li > ul li a{
+    font-size: 2.5vw;
+    margin-left: 3vw;
+    line-height: 8vw;
+    font-weight: bold;
+}
+section .sub5_1content .contact{
+    width: 90%;
+    margin: 27vw auto 5vw;
+    background: #354067;
+    border-radius: 10px;
+}
+section .sub5_1content .contact ul{
+    display: flex;
+    justify-content: space-around;
+}
+section .sub5_1content .contact ul li{
+    font-size: 2.5vw;
+    color:#fff;
+    line-height: 7vw;
+}
+section .sub5_1content .contact ul li:nth-of-type(2){
+    display: none;
+}
+section .sub5_1content .contact ul li:last-child{
+    display: none;
+}}
+@media (max-width:768px){
+    
+    section .top{
+        width: 100%; height: 30vh;
+        position: relative;
+    }
+    section .sub5_1{
+        background: url(../img/top5_1.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 30vh;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .sub5_1content{
+        width: 100%;
+        padding-top: 0;
+    }
+    section .sub5_1content .tap{
+        width: 93%;
+        margin:0 auto 3vh;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #666;
+    }
+    section .sub5_1content .tap a{
+        width: 100%;
+        font-size: 2.5vw;
+        line-height: 7vw;
+        font-weight: bold;
+        border-right: 1px solid #666;
+        text-align: center;
+        transition:0;
+    }
+    section .sub5_1content .tap a:last-child{
+        width: 100%;
+        font-size: 2.5vw;
+        line-height: 7vw;
+        font-weight: bold;
+        border-right: none;
+    }
+    section .sub5_1content .tap a:first-child{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    section .sub5_1content .tap a:hover{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    
+    section .sub5_1content .content{
+        width: 93%; height:10vh;
+        margin: 1vh auto 10vh;
+    }
+    section .sub5_1content .content > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section .sub5_1content .content > ul > li{
+        display: flex;
+        margin-bottom:8px;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+    }
+    section .sub5_1content .content > ul > li > a{
+        width: 25%;
+        background: #e5e5e5;
+        font-size: 2.5vw;
+        line-height: 8vw;
+        text-align: center;
+        font-weight: bold;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    section .sub5_1content .content > ul > li > ul{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        background: #eeeeee;
+    }
+    section .sub5_1content .content > ul > li > ul li a{
+        font-size: 2.5vw;
+        margin-left: 3vw;
+        line-height: 8vw;
+        font-weight: bold;
+    }
+    section .sub5_1content .contact{
+        width: 90%;
+        margin: 27vw auto 5vw;
+        background: #354067;
+        border-radius: 10px;
+    }
+    section .sub5_1content .contact ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    section .sub5_1content .contact ul li{
+        font-size: 2.5vw;
+        color:#fff;
+        line-height: 9vw;
+    }
+    section .sub5_1content .contact ul li:nth-of-type(2){
+        display: none;
+    }
+    section .sub5_1content .contact ul li:last-child{
+        display: none;
+    }}
+@media (max-width:480px){
+
+    section .top{
+        width: 100%; height: 30vh;
+        position: relative;
+    }
+    section .sub5_1{
+        background: url(../img/top5_1.jpg) no-repeat center/ cover;
+        margin-bottom: 3vh;
+    }
+    section .top:after{
+        content: '';
+        width: 100%; height: 30vh;
+        background: rgba(0,0,0,0.3);
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    section .top h2{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bolder;
+        letter-spacing: 0.1em;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+    section .sub5_1content{
+        width: 100%;
+        padding-top: 0;
+    }
+    section .sub5_1content .tap{
+        width: 93%;
+        margin:0 auto 3vh;
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid #666;
+    }
+    section .sub5_1content .tap a{
+        width: 100%;
+        font-size: 2.5vw;
+        line-height: 7vw;
+        font-weight: bold;
+        border-right: 1px solid #666;
+        text-align: center;
+        transition:0;
+    }
+    section .sub5_1content .tap a:last-child{
+        width: 100%;
+        font-size: 2.5vw;
+        line-height: 7vw;
+        font-weight: bold;
+        border-right: none;
+    }
+    section .sub5_1content .tap a:first-child{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    section .sub5_1content .tap a:hover{
+        background: #354067;
+        color: #fff;
+        font-weight: bolder;
+    }
+    
+    section .sub5_1content .content{
+        width: 93%; height:10vh;
+        margin: 1vh auto 10vh;
+    }
+    section .sub5_1content .content > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    section .sub5_1content .content > ul > li{
+        display: flex;
+        margin-bottom:8px;
+        border-top: 1px solid rgba(0,0,0,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.3);
+    }
+    section .sub5_1content .content > ul > li > a{
+        width: 25%;
+        background: #e5e5e5;
+        font-size: 2.5vw;
+        line-height: 8vw;
+        text-align: center;
+        font-weight: bold;
+        border-right: 1px solid rgba(0,0,0,0.3);
+    }
+    section .sub5_1content .content > ul > li > ul{
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        background: #eeeeee;
+    }
+    section .sub5_1content .content > ul > li > ul li a{
+        font-size: 2.5vw;
+        margin-left: 3vw;
+        line-height: 8vw;
+        font-weight: bold;
+    }
+    section .sub5_1content .contact{
+        width: 90%;
+        margin: 27vw auto 5vw;
+        background: #354067;
+        border-radius: 10px;
+    }
+    section .sub5_1content .contact ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    section .sub5_1content .contact ul li{
+        font-size: 2.5vw;
+        color:#fff;
+        line-height: 9vw;
+    }
+    section .sub5_1content .contact ul li:nth-of-type(2){
+        display: none;
+    }
+    section .sub5_1content .contact ul li:last-child{
+        display: none;
+    }
+}

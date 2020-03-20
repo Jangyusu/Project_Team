@@ -1,0 +1,238 @@
+@import url(common.css);
+@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+/** font
+
+font-family: 'NanumSquare', sans-serif
+font-family: 'Nanum Gothic', sans-serif;
+
+**/
+
+
+/********** body **********/
+
+html, body {
+    font-family: 'NanumSquare', sans-serif;
+    color: #333;
+}
+
+/********** header **********/
+
+header {
+    width: 100%;
+    position: fixed; left: 0; top: 0;
+    background:rgba(25,30,70,.8);
+    z-index: 1;
+}
+header::before {
+    content: "";
+    width: 100%; height:94px;
+    background: #fff;
+    display: block;
+    position:absolute;
+}
+header .header_box {
+    width: 100%;    
+    display: flex; justify-content: space-between; align-items:baseline;
+    padding: 0 48px 0 94px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+header .header_box > a{
+    transform:translateY(-40%);
+}
+header .header_box nav {
+    height: 100%;
+}
+header .header_box nav .header_1depth {
+    height: 100%;
+    display: flex;
+}
+header .header_box nav .header_1depth > li {
+    text-align: center;
+}
+header .header_box nav .header_1depth > li > a {
+    width: 100%;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 90px;
+    padding: 0 50px;
+}
+
+header .header_box nav .header_1depth > li > ul {
+    display: none;
+}
+header .header_box nav:hover .header_1depth > li > ul {
+    display: block;
+}
+.header_1depth > li > ul li a {
+    font-size: 15px;
+    color: #fff;
+    line-height: 20px;
+    margin: 25px 0;
+    padding: 0 20px;
+}
+.header_1depth > li > ul li a::after {
+    content: "";
+    width: 0%; height: 2px;
+    background: #fff;
+    display: block;
+    transition: .5s;
+}
+.header_1depth > li > ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+header .header_box .login {
+    width: 261px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_box .login a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+header .header_box .login form {
+    width: 151px; height: 27px;
+    border: 2px solid #192346;
+    display: flex; justify-content: space-between;
+}
+header .header_box .login input[type="text"] {
+    width: 100%;
+    border: none;
+    margin-left: 5px;
+    outline-style: none;
+}
+header .header_box .login form a {
+    width: 25px;
+    height: 23px;
+    background: #192346;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*************** content ***************/
+
+.content {
+    width: 100%;
+    margin-top: 95px;
+}
+.content .title {
+    width: 100%; height: 300px;
+    background: url(../img/sub/img_sub04.jpg) no-repeat center / cover;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+}
+.content ul {
+    display: flex; justify-content: center;
+    margin: 251px 0 275px 0;
+}
+.content ul li {
+    margin-right: 76px;
+    width: 289px; height: 289px;
+    background: #eee;
+    border: 15px solid #354067;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    opacity: .8;
+}
+.content ul li:hover {
+    opacity: 1;
+}
+.content ul li:last-of-type {
+    margin-right: 0;
+}
+.content ul li img {
+    height: 90px;
+}
+.content ul li p {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 65px;
+}
+
+/* footer */
+
+footer {
+    width: 100%; height: 198px;
+}
+footer .foo_top {
+    width: 100%; height: 54px;
+    background: #37405f;
+    display: flex; align-items: center;
+}
+footer .foo_top .foo_all {
+    width: 1462px;
+    margin: 0 auto; padding: 0 15px;
+    display: flex; justify-content: space-between;
+}
+footer .foo_top .foo_all .foo_left {
+    width: 840px;
+}
+footer .foo_top .foo_all .foo_left ul {
+    width: 100%;
+    display: flex; justify-content: space-between;
+}
+footer .foo_top .foo_all .foo_left ul li {
+    display: flex; align-items: center;
+}
+footer .foo_top .foo_all .foo_left ul li::after {
+    content: "";
+    width: 1px; height: 15px;
+    background: #999;
+    display: inline-block;
+    margin-left: 15px;
+}
+footer .foo_top .foo_all .foo_left ul li:last-of-type::after {
+    display: none;
+}
+footer .foo_top .foo_all .foo_left ul li a {
+    color: #ccc;
+    font-size: 14px;
+}
+footer .foo_top .foo_all .foo_left ul li a:hover {
+    color: #fff;
+}
+footer .foo_top .foo_all .foo_right a {
+    display: flex; justify-content: center; align-items: center;
+    font-size: 14px;
+}
+footer .foo_top .foo_all .foo_right a p {
+    color: #ccc;
+    font-size: 16px;
+}
+footer .foo_top .foo_all .foo_right a img {
+    margin-left: 5px;
+}
+
+footer .bottom {
+    width: 100%; height: 144px;
+    background: #333;
+    display: flex; justify-content: space-between; align-items: center;
+}
+footer .bottom .bot_content {
+    width: 1462px;
+    margin: 0 auto;
+    padding-left: 15px;
+    display: flex; align-items: center;
+}
+footer .bot_content img {
+    margin-right: 20px;
+}
+footer .bot_text {
+    height: 72px;
+    display: flex; flex-direction: column; justify-content: space-between;
+}
+footer .bot_text p {
+    font-size: 14px;
+    color: #ccc;
+}

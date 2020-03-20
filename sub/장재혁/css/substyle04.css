@@ -1,0 +1,49 @@
+@import url('common.css');
+.bottomline{width: 100%;margin-top: 20px; border-bottom: 1px solid #e3e3e3;}
+.topline{width: 100%; margin-bottom: 20px; border-top: 1px solid #e3e3e3;}
+#wrap{width: 1910px; margin: 0 auto; overflow: hidden; }   
+header{padding-top: 10px;}
+header .header01{width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+header .header01 .headSearch{ width: 350px; height: 30px; border: 1px solid #e3e3e3; }
+header .header01 .headSearch form{width: 100%; display: flex; justify-content: space-between; align-items: center;}
+header .header01 .headSearch form input{height: 100%; width: 100%; outline-style: none;}
+header .header01 .headSearch form input:last-of-type{width: 27px; background: gray;}
+header .header01 .headSearch form input:first-of-type{border: none; font-size: 12px;padding-left: 10px;}
+header .header01 div{width: 200px; display: flex; justify-content: space-between;}
+header nav{width: 900px; margin: 0 auto;}
+header nav ul{ display: flex; justify-content: space-between; padding: 25px; position: relative;}
+header nav ul li{position: relative; width: 100%; text-align: center;}
+header nav ul:hover li ul{opacity: 1;}
+header nav ul:hover > div{opacity: .6;}
+header nav ul li a{font-size: 17px; color: black;}
+header nav ul li ul{ position: absolute; top: 50px; left: 0; padding: 0; display: flex; flex-direction: column; width: 100%; opacity: 0; z-index: 2;}
+header nav ul > div{width: 1910px; background: #061237; position: absolute; left: -505px; top: 74px; height: 100px; opacity: 0;}
+header nav ul li ul li{padding: 3px; z-index: 10;}
+header nav ul li ul li a{color: white; z-index: 10;} 
+
+
+section{width: 1400px; margin: 0 auto;}
+section article{position: relative; display: flex; justify-content: center; align-items: center;}
+section article h2{position: absolute; font-size: 42px; color: black;}
+
+section .maintext{margin: 30px;}
+section .maintext p{margin-bottom: 30px; font-size: 28px; color: chocolate;}
+section .maintext span{font-size: 20px; color: black; margin-bottom: 30px;}
+
+section ul{display: flex;  flex-direction: column;}
+section ul li{}
+section ul li .lank{display: flex; justify-content: center;}
+section ul li .content{width:350px;padding: 10px 0; display: flex; flex-direction: column; align-items: center;}
+section ul li .content img{width: 100%; padding: 20px;}
+
+footer{width: 100%; padding: 20px; z-index: 2;}
+footer .footer01{display: flex; justify-content: space-around; margin: 0 55px;}
+footer .footer01 .docmenu a{margin-right: 20px;}
+footer .footer01 .familysite{}
+footer .footer01 .familysite a{padding: 10px; border: 1px solid #e3e3e3;}
+footer .footer01 .familysite svg{margin-left: 15px;}
+footer .footer02{display: flex; justify-content: space-around; margin: 30px;}
+footer .footer02 > div{}
+footer .footer02 > div h2{float: left; margin-right: 30px;}
+footer .footer02 > div .address{float: left;}
+footer .footer02 p{}
