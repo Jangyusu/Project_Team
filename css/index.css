@@ -21,17 +21,15 @@ html, body {
 
 .content {
     position: relative;
-    margin-top: 94px;
     margin: 0 auto;
 }
 
 /******* visual *******/
 
 .visual {
-    width: 100%; height: 773px;
+    width: 100%; height: 73vh;
     margin: 0 auto;
     display: flex; justify-content: center; align-items: center;
-    padding: 0 65px;
     position: relative;
     overflow: hidden;
 }
@@ -41,24 +39,14 @@ html, body {
     position: absolute; left: 0; top: 0;
     display: flex; justify-content: center; align-items: center;
 }
-.visual img {
+.visual .img img {
     position: absolute; left: 50%; top: 0;
     transform: translateX(-50%);
-    opacity: 0;
-}
-.visual img:nth-of-type(1) {
-    opacity: 1;
-}
-.visual img:nth-of-type(2) {
-    top: -100px;
-}
-.visual img:nth-of-type(3) {
-    top: -200px;
 }
 .visual p {
     font-size: 3.75rem;
     font-weight: 800;
-    line-height: 70px;
+    line-height: 5rem;
     letter-spacing: 0.025em;
     text-align: center;
     color: #fff;
@@ -69,23 +57,25 @@ html, body {
     color: #ffd617;
     font-size: 3.75rem;
     font-weight: bold;
+    line-height: 5rem;
 }
 .visual .arrow {
     width: 100%;
     position: absolute; left: 0; top: 50%;
     transform: translateY(-50%);
     display: flex; justify-content: space-between;
-    padding: 30px;
+    padding: 30px 150px;
     z-index: 3;
 }
-.visual .arrow a i {
+.visual .arrow i {
     opacity: 0.6;
     transform: scale(0.9);
     transition: .5s;
     font-size: 3.75rem;
     color: #fff;
+    cursor: pointer;
 }
-.visual .arrow a i:hover {
+.visual .arrow i:hover {
     opacity: 0.8;
     transform: scale(1);
 }
