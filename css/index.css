@@ -39,10 +39,6 @@ html, body {
     position: absolute; left: 0; top: 0;
     display: flex; justify-content: center; align-items: center;
 }
-.visual .img img {
-    position: absolute; left: 50%; top: 0;
-    transform: translateX(-50%);
-}
 .visual p {
     font-size: 3.75rem;
     font-weight: 800;
@@ -61,10 +57,11 @@ html, body {
 }
 .visual .arrow {
     width: 100%;
-    position: absolute; left: 0; top: 50%;
-    transform: translateY(-50%);
-    display: flex; justify-content: space-between;
-    padding: 30px 150px;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
     z-index: 3;
 }
 .visual .arrow i {
@@ -84,7 +81,7 @@ html, body {
 
 section {
     position: relative;
-    height: 545px;
+    height: 51vh;
     background: #eee;
     z-index: 10;
 }
