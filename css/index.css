@@ -28,24 +28,13 @@ html, body {
 /******* visual *******/
 
 .visual {
+    content: "";
     width: 100%;
     height: 600px;
     background: url("../img/img_visual00.jpg") no-repeat center / cover;
     display: flex;
     align-items: center;
     position: relative;
-}
-.visual .img {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 1;
 }
 .visual p {
     font-size: 3.75rem;
