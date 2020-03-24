@@ -3111,7 +3111,8 @@ aside a:hover {
         top: 0;
     }
     .visual p {
-        font-size: 1.875rem;
+        padding: 0 5px;
+        font-size: 1.375rem;
         font-weight: 800;
         line-height: 3.75rem;
         letter-spacing: 0.025em;
@@ -3122,14 +3123,14 @@ aside a:hover {
     }
     .visual p span {
         color: #ffd617;
-        font-size: 1.875rem;
+        font-size: 1.375rem;
         font-weight: bold;
         line-height: 3.75rem;
     }
     .visual .arrow {
         width: 100%;
         padding: 0 5%;
-        display: flex;
+        display: none;
         justify-content: space-between;
         position: absolute;
         left: 50%;
@@ -3153,7 +3154,7 @@ aside a:hover {
     /******* section *******/
 
     section {
-        padding: 120px 0 50px;
+        padding: 100px 0 40px;
         background: #eee;
         position: relative;
         z-index: 10;
@@ -3194,8 +3195,8 @@ aside a:hover {
     }
     .button li a p {
         margin: 0 0 16px 0;
-        font-size: 0.875rem;
-        font-weight: bold;
+        font-size: 0.75rem;
+        font-weight: 400;
         color: #fff;
         transition: 0.5s;
     }
@@ -3204,7 +3205,7 @@ aside a:hover {
     }
     .button li a img {
         filter: invert(1);
-        transform: scale(0.7);
+        transform: scale(0.6);
         transition: 0.5s;
     }
     .button li a:hover img {
@@ -3416,14 +3417,14 @@ aside a:hover {
 
     .information {
         width: 100%;
-        margin: 0 auto 70px;
+        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     .information .inf_box {
-        width: 49%;
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: -1px;
         padding: 43px 0 60px;
         border: 1px solid #ccc;
         text-align: center;
