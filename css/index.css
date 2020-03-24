@@ -30,12 +30,10 @@ html, body {
 .visual {
     width: 100%;
     height: 600px;
-    margin: 0 auto;
+    background: url("../img/img_visual00.jpg") no-repeat center / cover;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
 }
 .visual .img {
     width: 100%;
@@ -460,23 +458,10 @@ aside a:hover {
     .visual {
         width: 100%;
         height: 600px;
-        margin: 0 auto;
+        background: url("../img/img_visual00.jpg") no-repeat center / cover;
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
-    }
-    .visual .img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
     }
     .visual p {
         font-size: 3.75rem;
@@ -890,23 +875,10 @@ aside a:hover {
     .visual {
         width: 100%;
         height: 600px;
-        margin: 0 auto;
+        background: url("../img/img_visual00.jpg") no-repeat center / cover;
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
-    }
-    .visual .img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
     }
     .visual p {
         font-size: 3.75rem;
@@ -1320,23 +1292,10 @@ aside a:hover {
     .visual {
         width: 100%;
         height: 600px;
-        margin: 0 auto;
+        background: url("../img/img_visual00.jpg") no-repeat center / cover;
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
-    }
-    .visual .img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
     }
     .visual p {
         font-size: 3.75rem;
@@ -1752,23 +1711,10 @@ aside a:hover {
     .visual {
         width: 100%;
         height: 400px;
-        margin: 0 auto;
+        background: url("../img/img_visual00.jpg") no-repeat center / cover;
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
-    }
-    .visual .img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
     }
     .visual p {
         font-size: 2.5rem;
@@ -2189,23 +2135,10 @@ aside a:hover {
     .visual {
         width: 100%;
         height: 400px;
-        margin: 0 auto;
+        background: url("../img/img_visual00.jpg") no-repeat center / cover;
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
-    }
-    .visual .img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
     }
     .visual p {
         font-size: 2.5rem;
@@ -2640,23 +2573,10 @@ aside a:hover {
     .visual {
         width: 100%;
         height: 400px;
-        margin: 0 auto;
+        background: url("../img/img_visual00.jpg") no-repeat center / cover;
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
-    }
-    .visual .img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
     }
     .visual p {
         font-size: 1.875rem;
@@ -3092,23 +3012,10 @@ aside a:hover {
     .visual {
         width: 100%;
         height: 400px;
-        margin: 0 auto;
+        background: url("../img/img_visual00.jpg") no-repeat center / cover;
         display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
-    }
-    .visual .img {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 0;
-        top: 0;
     }
     .visual p {
         padding: 0 5px;

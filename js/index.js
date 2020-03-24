@@ -1,9 +1,11 @@
 window.addEventListener("load", function () { //window load후 실행
-    var visualImg = document.querySelector(".img img"),
+    var visual = document.querySelector(".visual"),
         visualImgArrow = document.querySelector(".arrow"),
         visualImgPrev = document.querySelectorAll(".arrow i")[0],
         visualImgNext = document.querySelectorAll(".arrow i")[1],
         visualImgIndex = 0;
+
+    console.log(visual.style);
 
 
 
@@ -29,7 +31,8 @@ window.addEventListener("load", function () { //window load후 실행
                 visualImgIndex = 0;
             }
         }
-        visualImg.src = "img/img_visual0" + visualImgIndex + ".jpg"; //visualImg 변경
+
+        //visualImg 변경
 
     }
 
@@ -40,6 +43,6 @@ window.addEventListener("load", function () { //window load후 실행
             visualImgIndex = 0;
         }
 
-        visualImg.src = "img/img_visual0" + visualImgIndex + ".jpg" //visualImg 변경
+        //visualImg 변경
     }
 })
