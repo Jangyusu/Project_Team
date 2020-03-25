@@ -2600,8 +2600,8 @@ aside a:hover {
     .visual p {
         font-size: 1.625rem;
         font-weight: 800;
-        line-height: 3.75rem;
-        letter-spacing: 0.025em;
+        line-height: 2.75rem;
+        letter-spacing: 0.01rem;
         text-align: center;
         color: #fff;
         margin: 0 auto;
@@ -2611,7 +2611,7 @@ aside a:hover {
         color: #ffd617;
         font-size: 1.625rem;
         font-weight: bold;
-        line-height: 3.75rem;
+        line-height: 2.75rem;
     }
     .visual .arrow {
         width: 100%;
@@ -2911,7 +2911,7 @@ aside a:hover {
     .information .inf_box {
         width: 49%;
         margin-bottom: 20px;
-        padding: 43px 0 60px;
+        padding: 30px 0;
         border: 1px solid #ccc;
         text-align: center;
         display: flex;
@@ -3041,8 +3041,8 @@ aside a:hover {
         padding: 0 5px;
         font-size: 1.5rem;
         font-weight: 800;
-        line-height: 3.75rem;
-        letter-spacing: 0.025em;
+        line-height: 2.75rem;
+        letter-spacing: 0.01rem;
         text-align: center;
         color: #fff;
         margin: 0 auto;
@@ -3052,7 +3052,7 @@ aside a:hover {
         color: #ffd617;
         font-size: 1.5rem;
         font-weight: bold;
-        line-height: 3.75rem;
+        line-height: 2.75rem;
     }
     .visual .arrow {
         width: 100%;
@@ -3355,7 +3355,7 @@ aside a:hover {
     .information .inf_box {
         width: 50%;
         margin: 0;
-        padding: 43px 0 60px;
+        padding: 30px 0;
         border: 1px solid #ccc;
         text-align: center;
         display: flex;
