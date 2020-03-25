@@ -239,6 +239,7 @@ section {
 .photo .photo_box .photo_left .photo_bottom{
     width: 100%;
     padding: 39px 23px 49px;
+    word-break: keep-all;
     background: #192346;
     display: flex;
     flex-direction: column;
@@ -2961,6 +2962,8 @@ aside a:hover {
         display: block;
     }
     .information .inf_box .text_box {
+        padding: 0 10px;
+        word-break: keep-all;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -3403,6 +3406,8 @@ aside a:hover {
         display: block;
     }
     .information .inf_box .text_box {
+        padding: 0 10px;
+        word-break: keep-all;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
