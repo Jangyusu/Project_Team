@@ -52,13 +52,18 @@ img {
 /********** header **********/
 
 header {
-        width: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
-        background: rgba(25, 30, 70, 0.8);
-        z-index: 9999;
-    }
+    width: 100%;
+    background: rgba(25, 30, 70, 0.8);
+    transform: translateY(0);
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+    z-index: 9999;
+}
+header.active {
+    transform: translateY(-100%);
+}
 header::before {
     content: "";
     width: 100%;

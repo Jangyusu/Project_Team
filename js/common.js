@@ -1,20 +1,24 @@
-var burgerMenuOn = document.querySelector(".burger_menu"), // 버거메뉴 열기
+var header = document.querySelector("header"),
+    burgerMenuOn = document.querySelector(".burger_menu"), // 버거메뉴 열기
     bergerMenuOff = document.querySelector(".exit"), // 버거메뉴 닫기
     mobileHeader = document.querySelector(".header_1depth_m"), // 버거메뉴
     menu = document.querySelectorAll(".menu_m"), // 메뉴
     detailMenu = document.querySelectorAll(".detail_menu_m"),
-    line = document.getElementsByClassName("line");
+    line = document.getElementsByClassName("line"),
+    scrollStart = 0,
+    scrollEnd,
+    scrollBln = true;
 
-burgerMenuOn.addEventListener("click", function() {
+burgerMenuOn.addEventListener("click", function () { //버거메뉴 열기
     mobileHeader.classList.add("on");
-}); // 버거메뉴 열기
+});
 
-bergerMenuOff.addEventListener("click", function() {
+bergerMenuOff.addEventListener("click", function () { //버거메뉴 닫기
     mobileHeader.classList.remove("on");
-}); // 버거메뉴 닫기
+});
 
-for (var i = 0; i < menu.length; i++) {
-    menu[i].addEventListener("click", function(e) {
+for (var i = 0; i < menu.length; i++) { //버거메뉴 switch
+    menu[i].addEventListener("click", function (e) {
         e.preventDefault();
 
         if (e.target.nextSibling.nextSibling.classList.contains("on")) {
@@ -31,4 +35,16 @@ for (var i = 0; i < menu.length; i++) {
     });
 }
 
-/* 버거메뉴 on/off */
+window.addEventListener("scroll", function () { //스크롤시 헤더 on/off
+    scrollEnd = document.documentElement.scrollTop;
+
+    if (scrollStart > scrollEnd) { //위로 스크롤
+        header.classList.remove("active");
+    } else { //아래로 스크롤
+        header.classList.add("active");
+    }
+
+    scrollStart = scrollEnd;
+})
+
+
