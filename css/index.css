@@ -1616,7 +1616,7 @@ aside a:hover {
         opacity: 0;
     }
     .information .inf_box:hover .inf_hover {
-        opacity: 1;
+        opacity: 0;
     }
     .information .inf_hover p:first-of-type {
         font-size: 1.5rem;
@@ -2039,7 +2039,7 @@ aside a:hover {
         opacity: 0;
     }
     .information .inf_box:hover .inf_hover {
-        opacity: 1;
+        opacity: 0;
     }
     .information .inf_hover p:first-of-type {
         font-size: 1.5rem;
@@ -2476,7 +2476,7 @@ aside a:hover {
         opacity: 0;
     }
     .information .inf_box:hover .inf_hover {
-        opacity: 1;
+        opacity: 0;
     }
     .information .inf_hover p:first-of-type {
         font-size: 1.5rem;
@@ -2676,7 +2676,7 @@ aside a:hover {
         transition: 0.5s;
     }
     .button li a:hover {
-        background: #ffd617;
+        background: #192346;
     }
     .button li a p {
         margin: 0 0 16px 0;
@@ -2686,7 +2686,7 @@ aside a:hover {
         transition: 0.5s;
     }
     .button li a:hover p {
-        color: #000;
+        color: #fff;
     }
     .button li a img {
         filter: invert(1);
@@ -2694,7 +2694,7 @@ aside a:hover {
         transition: 0.5s;
     }
     .button li a:hover img {
-        filter: invert(0);
+        filter: invert(1);
     }
 
 
@@ -2932,7 +2932,7 @@ aside a:hover {
         opacity: 0;
     }
     .information .inf_box:hover .inf_hover {
-        opacity: 1;
+        opacity: 0;
     }
     .information .inf_hover p:first-of-type {
         font-size: 1.5rem;
@@ -3036,7 +3036,7 @@ aside a:hover {
     }
     .visual p {
         padding: 0 5px;
-        font-size: 1.625rem;
+        font-size: 1.75rem;
         font-weight: 800;
         line-height: 3.75rem;
         letter-spacing: 0.025em;
@@ -3047,7 +3047,7 @@ aside a:hover {
     }
     .visual p span {
         color: #ffd617;
-        font-size: 1.625rem;
+        font-size: 1.75rem;
         font-weight: bold;
         line-height: 3.75rem;
     }
@@ -3115,7 +3115,7 @@ aside a:hover {
         transition: 0.5s;
     }
     .button li a:hover {
-        background: #ffd617;
+        background: #192346;
     }
     .button li a p {
         margin: 0 0 16px 0;
@@ -3125,7 +3125,7 @@ aside a:hover {
         transition: 0.5s;
     }
     .button li a:hover p {
-        color: #000;
+        color: #fff;
     }
     .button li a img {
         filter: invert(1);
@@ -3133,7 +3133,7 @@ aside a:hover {
         transition: 0.5s;
     }
     .button li a:hover img {
-        filter: invert(0);
+        filter: invert(1);
     }
 
 
@@ -3151,14 +3151,17 @@ aside a:hover {
         width: 1px;
         height: 100%;
         background: #bfbfbf;
-        display: block;
+        display: none;
     }
     .post > li {
-        width: 45%;
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    .post > li:nth-of-type(2) {
+        display: none;
     }
     .post > li .top {
         width: 100%;
@@ -3192,7 +3195,7 @@ aside a:hover {
         opacity: 0.8;
     }
     .post > li > ul li a p:first-of-type {
-        width: 100%;
+        width: 75%;
         font-size: 0.875rem;
         line-height: 30px;
         white-space: nowrap;
@@ -3201,7 +3204,7 @@ aside a:hover {
     }
     .post > li > ul li a p:last-of-type {
         font-size: 0.75rem;
-        display: none;
+        display: block;
     }
 
     /******* photo *******/
@@ -3339,20 +3342,16 @@ aside a:hover {
 
     /* information */
 
-    .information_hidden {
-        width: 100%;
-        overflow: scroll;
-    }
     .information {
-        width: max-content;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .information .inf_box {
-        width: 100%;
-        margin: 0 -1px 0 0;
+        width: 50%;
+        margin: 0;
         padding: 43px 0 60px;
         border: 1px solid #ccc;
         text-align: center;
@@ -3375,7 +3374,7 @@ aside a:hover {
         opacity: 0;
     }
     .information .inf_box:hover .inf_hover {
-        opacity: 1;
+        opacity: 0;
     }
     .information .inf_hover p:first-of-type {
         font-size: 1.5rem;
