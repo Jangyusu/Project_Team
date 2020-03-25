@@ -3339,6 +3339,10 @@ aside a:hover {
 
     /* information */
 
+    .information_hidden {
+        width: 100%;
+        overflow: scroll;
+    }
     .information {
         width: max-content;
         margin: 0 auto;
