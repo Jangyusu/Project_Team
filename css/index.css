@@ -2598,7 +2598,7 @@ aside a:hover {
         opacity: 1;
     }
     .visual p {
-        font-size: 1.875rem;
+        font-size: 1.625rem;
         font-weight: 800;
         line-height: 3.75rem;
         letter-spacing: 0.025em;
@@ -2609,7 +2609,7 @@ aside a:hover {
     }
     .visual p span {
         color: #ffd617;
-        font-size: 1.875rem;
+        font-size: 1.625rem;
         font-weight: bold;
         line-height: 3.75rem;
     }
@@ -3039,7 +3039,7 @@ aside a:hover {
     }
     .visual p {
         padding: 0 5px;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         font-weight: 800;
         line-height: 3.75rem;
         letter-spacing: 0.025em;
@@ -3050,7 +3050,7 @@ aside a:hover {
     }
     .visual p span {
         color: #ffd617;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         font-weight: bold;
         line-height: 3.75rem;
     }
