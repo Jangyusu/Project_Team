@@ -208,7 +208,8 @@ section {
 
 .photo {
     width: 100%;
-    margin: 89px auto 160px;
+    padding: 89px 0 160px;
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -624,7 +625,8 @@ aside a:hover {
 
     .photo {
         width: 100%;
-        margin: 89px auto 160px;
+        padding: 89px 0 160px;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1040,7 +1042,8 @@ aside a:hover {
 
     .photo {
         width: 100%;
-        margin: 89px auto 160px;
+        padding: 89px 0 160px;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1456,7 +1459,8 @@ aside a:hover {
 
     .photo {
         width: 100%;
-        margin: 89px auto 160px;
+        padding: 89px 0 160px;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1877,7 +1881,8 @@ aside a:hover {
 
     .photo {
         width: 100%;
-        margin: 89px auto 160px;
+        padding: 89px 0 160px;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2314,7 +2319,8 @@ aside a:hover {
 
     .photo {
         width: 100%;
-        margin: 60px auto;
+        padding: 60px 0;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2770,7 +2776,8 @@ aside a:hover {
 
     .photo {
         width: 100%;
-        margin: 60px auto;
+        padding: 60px 0;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -3214,7 +3221,8 @@ aside a:hover {
 
     .photo {
         width: 100%;
-        margin: 40px auto 0;
+        padding: 40px 0 0 0;
+        background: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
